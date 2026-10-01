@@ -45,5 +45,14 @@ int main(void) {
     assert(received == 2);
 
     puts("mocor-adapter: PASS");
+
+#ifdef _WIN32
+    puts("");
+    puts("The test completed successfully.");
+    puts("Press Enter to close this window...");
+    fflush(stdout);
+    getchar();
+#endif
+
     return 0;
 }
