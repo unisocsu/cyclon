@@ -1,0 +1,35 @@
+name: Build MOCOR adapter for Windows
+
+on:
+  push:
+    paths:
+      - "mocor-adapter/**"
+      - ".github/workflows/build-mocor-adapter-windows.yml"
+  pull_request:
+    paths:
+      - "mocor-adapter/**"
+      - ".github/workflows/build-mocor-adapter-windows.yml"
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -S mocor-adapter -B build/mocor-adapter
+
+      - name: Build
+        run: cmake --build build/mocor-adapter --config Release
+
+      - name: Test
+        run: ctest --test-dir build/mocor-adapter -C Release --output-on-failure
+
+      - name: Upload Windows executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: mocor-adapter-test-windows
+          path: build/mocor-adapter/Release/test_adapter.exe
