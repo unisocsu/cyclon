@@ -97,10 +97,12 @@ int main(int argc, char **argv) {
         return EXIT_FAILURE;
     }
 
-    char buffer[256];
-    char buffer1[256];
-    getString(pacHeader.firmwareName, buffer, sizeof(buffer));
-    printf("Firmware name: %s\n", buffer);
+    char name[256];
+    char fileName[256];
+    unsigned char ioBuffer[64 * 1024];
+
+    getString(pacHeader.firmwareName, name, sizeof(name));
+    printf("Firmware name: %s\n", name);
     printf("Partition count: %d\n", pacHeader.partitionCount);
 
     if (pacHeader.partitionCount <= 0 || pacHeader.partitionCount > 512) {
@@ -122,6 +124,8 @@ int main(int argc, char **argv) {
     for (i = 0; i < pacHeader.partitionCount; ++i) {
         if (!seek_abs(fd, curPos)) {
             fprintf(stderr, "Partition header seek error\n");
+            free(partHeaders);
+            close(fd);
             return EXIT_FAILURE;
         }
 
@@ -130,27 +134,34 @@ int main(int argc, char **argv) {
             length < sizeof(PartitionHeader) ||
             length > 1024 * 1024) {
             fprintf(stderr, "Invalid partition header length at index %d\n", i);
+            free(partHeaders);
+            close(fd);
             return EXIT_FAILURE;
         }
 
         partHeaders[i] = malloc(length);
         if (!partHeaders[i]) {
             perror("malloc");
+            free(partHeaders);
+            close(fd);
             return EXIT_FAILURE;
         }
 
         if (!seek_abs(fd, curPos) ||
             !read_full(fd, partHeaders[i], length)) {
             fprintf(stderr, "Partition header error at index %d\n", i);
+            free(partHeaders[i]);
+            free(partHeaders);
+            close(fd);
             return EXIT_FAILURE;
         }
 
         curPos += length;
 
-        getString(partHeaders[i]->partitionName, buffer, sizeof(buffer));
-        getString(partHeaders[i]->fileName, buffer1, sizeof(buffer1));
+        getString(partHeaders[i]->partitionName, name, sizeof(name));
+        getString(partHeaders[i]->fileName, fileName, sizeof(fileName));
         printf("Partition name: %s\n\twith file name: %s\n\twith size %u\n",
-               buffer, buffer1, partHeaders[i]->partitionSize);
+               name, fileName, partHeaders[i]->partitionSize);
     }
 
     for (i = 0; i < pacHeader.partitionCount; ++i) {
@@ -163,53 +174,57 @@ int main(int argc, char **argv) {
         }
 
         if (!seek_abs(fd, part->partitionAddrInPac)) {
-            fprintf(stderr, "Partition image seek error\n");
+            fprintf(stderr, "Partition image seek error for partition %d\n", i);
             free(part);
-            return EXIT_FAILURE;
+            continue;
         }
 
-        getString(part->fileName, buffer, sizeof(buffer));
-        if (buffer[0] == 0) {
-            snprintf(buffer, sizeof(buffer), "partition_%d.bin", i);
+        getString(part->fileName, fileName, sizeof(fileName));
+        if (fileName[0] == 0) {
+            snprintf(fileName, sizeof(fileName), "partition_%d.bin", i);
         }
 
-        printf("Extract %s\n", buffer);
+        printf("Extract %s\n", fileName);
 
 #ifdef _WIN32
-        int fd_new = open(buffer, O_WRONLY | O_CREAT | O_TRUNC | O_BINARY, 0666);
+        int fd_new = open(fileName, O_WRONLY | O_CREAT | O_TRUNC | O_BINARY, 0666);
 #else
-        int fd_new = open(buffer, O_WRONLY | O_CREAT | O_TRUNC, 0666);
+        int fd_new = open(fileName, O_WRONLY | O_CREAT | O_TRUNC, 0666);
 #endif
         if (fd_new < 0) {
             perror("open output");
             free(part);
-            return EXIT_FAILURE;
+            continue;
         }
 
         uint32_t dataSizeLeft = part->partitionSize;
-        while (dataSizeLeft > 0) {
-            uint32_t copyLength = dataSizeLeft > 64 * 1024 ? 64 * 1024 : dataSizeLeft;
-            dataSizeLeft -= copyLength;
+        int failed = 0;
 
-            if (!read_full(fd, buffer, copyLength)) {
-                fprintf(stderr, "Partition image extraction error: %s\n", strerror(errno));
-                close(fd_new);
-                free(part);
-                return EXIT_FAILURE;
+        while (dataSizeLeft > 0) {
+            uint32_t copyLength =
+                dataSizeLeft > sizeof(ioBuffer) ? (uint32_t)sizeof(ioBuffer) : dataSizeLeft;
+
+            if (!read_full(fd, ioBuffer, copyLength)) {
+                fprintf(stderr, "Partition image extraction error at %s: %s\n",
+                        fileName, strerror(errno));
+                failed = 1;
+                break;
             }
 
             size_t written = 0;
             while (written < copyLength) {
-                ssize_t n = write(fd_new, buffer + written, copyLength - written);
+                ssize_t n = write(fd_new, ioBuffer + written, copyLength - written);
                 if (n <= 0) {
                     perror("write");
-                    close(fd_new);
-                    free(part);
-                    return EXIT_FAILURE;
+                    failed = 1;
+                    break;
                 }
                 written += (size_t)n;
             }
 
+            if (failed) break;
+
+            dataSizeLeft -= copyLength;
             printf("\r\t%02u%%",
                    (unsigned)((100ULL * (part->partitionSize - dataSizeLeft)) /
                               part->partitionSize));
@@ -218,6 +233,15 @@ int main(int argc, char **argv) {
 
         printf("\n");
         close(fd_new);
+
+        if (failed) {
+            remove(fileName);
+            free(part);
+            free(partHeaders);
+            close(fd);
+            return EXIT_FAILURE;
+        }
+
         free(part);
     }
 
