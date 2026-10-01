@@ -76,14 +76,14 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p decompiled/bin-c
+          mkdir -p decompiled/bin-c ghidra-input
           for f in original/*.bin; do
             [ -f "$f" ] || continue
             base="$(basename "$f" .bin)"
             project="/tmp/ghidra-$base"
             rm -rf "$project"
             mkdir -p "$project"
-            "$GHIDRA_DIR/support/analyzeHeadless"               "$project" "$base"               -import "$PWD/$f"               -loader BinaryLoader               -processor "ARM:LE:32:v7"               -analysisTimeoutPerFile 0               -scriptPath "$PWD/tools"               -postScript ExportDecompiledC.java               "$PWD/decompiled/bin-c/$base.c"               -deleteProject               || echo "Ghidra failed for $base" > "decompiled/bin-c/$base.error.txt"
+            "$GHIDRA_DIR/support/analyzeHeadless"               "$project" "$base"               -import "$PWD/$f"               -loader BinaryLoader               -processor "ARM:LE:32:v7"               -analysisTimeoutPerFile 0               -scriptPath "$PWD/tools"               -postScript ExportDecompiledC.java               "$PWD/decompiled/bin-c/$base.c"               -deleteProject               || { echo "Ghidra failed for $base" > "decompiled/bin-c/$base.error.txt"; continue; }
           done
 
       - name: Create C report
