@@ -95,7 +95,7 @@ jobs:
               "$project" "$base" \
               -import "$payload" \
               -loader BinaryLoader \
-              -processor "ARM:LE:32:v7:default" \
+              -processor "ARM:LE:32:v7" \
               -analysisTimeoutPerFile 1800 \
               -scriptPath "$PWD/tools" \
               -postScript ExportDecompiledC.java \
