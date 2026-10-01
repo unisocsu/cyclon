@@ -1,0 +1,100 @@
+name: Extract and decompile PAC
+
+on:
+  push:
+    paths:
+      - "*.pac"
+      - ".github/workflows/decompile-pac.yml"
+      - "tools/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  extract-and-decompile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential unzip gzip binutils
+
+      - name: Build PAC extractor
+        shell: bash
+        run: |
+          set -euxo pipefail
+          if [ ! -f tools/pacextractor.c ]; then
+            echo "tools/pacextractor.c is missing"
+            exit 1
+          fi
+          gcc -O2 -Wall -Wextra -o tools/pacextractor tools/pacextractor.c
+
+      - name: Find PAC
+        id: pac
+        shell: bash
+        run: |
+          set -euxo pipefail
+          pac="$(find . -maxdepth 1 -type f -iname '*.pac' | head -n 1)"
+          if [ -z "$pac" ]; then
+            echo "No PAC file found in repository root"
+            exit 1
+          fi
+          echo "path=$pac" >> "$GITHUB_OUTPUT"
+          echo "Using PAC: $pac"
+
+      - name: Extract PAC partitions
+        shell: bash
+        run: |
+          set -euxo pipefail
+          rm -rf original
+          mkdir -p original
+          ./tools/pacextractor "${{ steps.pac.outputs.path }}"
+          find . -maxdepth 1 -type f -name '*.bin' -print0 |
+            while IFS= read -r -d '' f; do
+              mv "$f" original/
+            done
+          echo "Extracted files:"
+          ls -lh original
+
+      - name: Decompile supported ARM binaries
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p decompiled
+          for f in original/*.bin; do
+            [ -f "$f" ] || continue
+            base="$(basename "$f" .bin)"
+            mkdir -p "decompiled/$base"
+            file "$f" | tee "decompiled/$base/file.txt"
+            strings -a -n 4 "$f" > "decompiled/$base/strings.txt" || true
+            objdump -D -b binary -m arm "$f" > "decompiled/$base/disassembly-arm.txt" 2>&1 || true
+          done
+
+      - name: Inspect existing decompiler source archive
+        shell: bash
+        run: |
+          set -euxo pipefail
+          if [ -f x30-user-decompiled.zip ]; then
+            mkdir -p decompiled/user-source
+            unzip -o x30-user-decompiled.zip -d decompiled/user-source
+            if [ -f decompiled/user-source/user_bin.c.gz ]; then
+              gzip -dc decompiled/user-source/user_bin.c.gz > decompiled/user-source/user_bin.c
+              wc -l decompiled/user-source/user_bin.c
+            fi
+          fi
+
+      - name: Package results
+        uses: actions/upload-artifact@v4
+        with:
+          name: pac-extracted-and-decompiled
+          path: |
+            original/
+            decompiled/
+          if-no-files-found: error
+          compression-level: 1
