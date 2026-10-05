@@ -11,6 +11,9 @@ on:
       - '.github/workflows/build_nuttx.yml'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -145,6 +148,12 @@ jobs:
         cp nuttx-build.log docs/nuttx-build-latest.log 2>/dev/null || cp ../nuttx-build.log docs/nuttx-build-latest.log 2>/dev/null || true
         ls -lh docs/nuttx-build-latest.log 2>&1 | head -5
         echo "=== tail ==="; tail -n 100 docs/nuttx-build-latest.log 2>&1 | head -n 100 || true
+        echo "=== pushing log to repo for public debug (skip ci) ==="
+        git config user.email "ci@cyclon.local"
+        git config user.name "cyclon-ci"
+        git add docs/nuttx-build-latest.log || true
+        git diff --cached --quiet || git commit -m "ci: update nuttx-build log [skip ci]" || true
+        git push origin main 2>&1 | head -20 || true
 
     - name: Convert NuttX to binary (if built)
       if: env.NUTTX_OK == '1'
