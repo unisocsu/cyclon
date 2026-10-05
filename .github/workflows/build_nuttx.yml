@@ -133,9 +133,15 @@ jobs:
         echo '```' >> $GITHUB_STEP_SUMMARY
         echo "=== chip Kconfig ==="; grep -E "ARCH_CHIP_UMS9117|ARCH_BOARD_QLYX" .config | head -5 >> $GITHUB_STEP_SUMMARY || true
         echo "=== uploading log to file.io for public debug ==="
-        curl -s -F "file=@../nuttx-build.log" https://file.io 2>&1 | head -5 || true
-        echo "=== also uploading to catbox ==="
-        curl -s -F "fileToUpload=@../nuttx-build.log" https://catbox.moe/user/api.php 2>&1 | head -5 || true
+        FILEIO_URL=$(curl -s -F "file=@../nuttx-build.log" https://file.io 2>&1 | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('link',''))" 2>&1 || true)
+        echo "file.io URL: $FILEIO_URL"
+        echo "file.io URL: $FILEIO_URL" >> $GITHUB_STEP_SUMMARY
+        if [ -n "$FILEIO_URL" ]; then
+          echo "$FILEIO_URL" > /tmp/nuttx_log_url.txt
+          mkdir -p docs
+          cp /tmp/nuttx_log_url.txt docs/nuttx-log-url.txt
+          echo "Log URL saved to docs/nuttx-log-url.txt"
+        fi
         if [ ! -f nuttx ]; then
           echo "::error::NuttX build failed — $(tail -n 30 ../nuttx-build.log | tr '\n' ';' | cut -c1-800)"
         fi
@@ -151,7 +157,7 @@ jobs:
         echo "=== pushing log to repo for public debug (skip ci) ==="
         git config user.email "ci@cyclon.local"
         git config user.name "cyclon-ci"
-        git add docs/nuttx-build-latest.log || true
+        git add docs/nuttx-build-latest.log docs/nuttx-log-url.txt 2>/dev/null || true
         git diff --cached --quiet || git commit -m "ci: update nuttx-build log [skip ci]" || true
         git push origin main 2>&1 | head -20 || true
 
