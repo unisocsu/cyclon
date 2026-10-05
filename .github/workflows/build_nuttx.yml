@@ -105,9 +105,12 @@ jobs:
       id: nuttx_build
       continue-on-error: true
       run: |
+        set -o pipefail
         cd nuttx
         make olddefconfig || true
-        make -j$(nproc) 2>&1 | tee ../nuttx-build.log
+        echo "=== make ==="
+        make -j$(nproc) 2>&1 | tee ../nuttx-build.log; echo "make exit=${PIPESTATUS[0]}"
+        echo "=== ls after make ==="; ls -lh nuttx* 2>&1 | head -20; ls -lh .config 2>&1 | head -5
         echo "=== checking output ==="
         if [ -f nuttx ]; then
           echo "NUTTX_OK=1" >> $GITHUB_ENV

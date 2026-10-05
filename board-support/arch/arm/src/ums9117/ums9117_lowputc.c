@@ -14,13 +14,11 @@
  */
 
 #include <nuttx/config.h>
-#include <arch/board/board.h>
-#include <arch/irq.h>
+#include <stdint.h>
+#include <nuttx/arch.h>
 
 #include "ums9117_memorymap.h"
-
-#include <nuttx/arch.h>
-#include <arch/irq.h>
+#include "chip.h"
 
 /* Simple register access */
 static inline void putreg32(uint32_t value, uintptr_t addr)
