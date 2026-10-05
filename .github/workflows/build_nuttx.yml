@@ -124,6 +124,11 @@ jobs:
           echo "NuttX build did not produce nuttx ELF — see log above, bare-metal still OK"
           echo "make exit was $MAKE_EXIT"
         fi
+        echo "=== writing log to summary ==="
+        echo '```' >> $GITHUB_STEP_SUMMARY
+        tail -n 200 ../nuttx-build.log >> $GITHUB_STEP_SUMMARY || true
+        echo '```' >> $GITHUB_STEP_SUMMARY
+        echo "=== chip Kconfig ==="; grep -E "ARCH_CHIP_UMS9117|ARCH_BOARD_QLYX" .config | head -5 >> $GITHUB_STEP_SUMMARY || true
 
     - name: Convert NuttX to binary (if built)
       if: env.NUTTX_OK == '1'
