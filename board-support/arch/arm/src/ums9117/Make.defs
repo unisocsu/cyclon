@@ -4,12 +4,11 @@
 
 include armv7-a/Make.defs
 
-HEAD_ASRC = ums9117_head.S
-HEAD_AOBJ = $(HEAD_ASRC:.S=$(OBJEXT))
-
 CHIP_CSRCS = ums9117_start.c ums9117_lowputc.c ums9117_irq.c ums9117_timerisr.c
 CHIP_ASRCS =
 
 ifeq ($(CONFIG_ARCH_FPU),y)
 CHIP_ASRCS += armv7-a/fpu.S
 endif
+
+# No custom HEAD — use armv7-a common startup

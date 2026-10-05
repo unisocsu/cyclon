@@ -107,18 +107,22 @@ jobs:
       run: |
         set -o pipefail
         cd nuttx
-        make olddefconfig || true
+        echo "=== .config ==="; grep -E "ARCH_CHIP|ARCH_BOARD|RAM_START" .config | head -20
+        echo "=== chip symlink ==="; ls -l arch/arm/src/chip 2>&1 | head -5; ls -l arch/arm/src/ums9117/ 2>&1 | head -20
+        echo "=== make olddefconfig ==="; make olddefconfig 2>&1 | tail -20 || true
         echo "=== make ==="
-        make -j$(nproc) 2>&1 | tee ../nuttx-build.log; echo "make exit=${PIPESTATUS[0]}"
+        make -j$(nproc) 2>&1 | tee ../nuttx-build.log; MAKE_EXIT=${PIPESTATUS[0]}; echo "make exit=$MAKE_EXIT"
         echo "=== ls after make ==="; ls -lh nuttx* 2>&1 | head -20; ls -lh .config 2>&1 | head -5
+        echo "=== nuttx-build.log tail ==="; tail -n 200 ../nuttx-build.log 2>&1 | head -n 200
         echo "=== checking output ==="
         if [ -f nuttx ]; then
           echo "NUTTX_OK=1" >> $GITHUB_ENV
           arm-none-eabi-size nuttx
+          echo "NuttX ELF built successfully"
         else
           echo "NUTTX_OK=0" >> $GITHUB_ENV
-          echo "NuttX build failed — see log, but bare-metal already succeeded"
-          tail -n 100 ../nuttx-build.log || true
+          echo "NuttX build did not produce nuttx ELF — see log above, bare-metal still OK"
+          echo "make exit was $MAKE_EXIT"
         fi
 
     - name: Convert NuttX to binary (if built)
