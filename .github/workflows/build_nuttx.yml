@@ -188,7 +188,7 @@ jobs:
         ls -lh "$PAC" | head -5
         if [ -f baremetal-build/kernel_hello.bin ]; then
           echo "Repacking bare-metal PAC..."
-          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_baremetal.pac Kernel=baremetal-build/kernel_hello.bin || echo "bare-metal repack failed, continuing"
+          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_baremetal.pac kernel.bin=baremetal-build/kernel_hello.bin || echo "bare-metal repack failed, continuing"
           ls -lh qlyx_x30_nuttx_baremetal.pac 2>&1 || true
         else
           echo "baremetal kernel_hello.bin not found!"
@@ -196,7 +196,7 @@ jobs:
         fi
         if [ -f nuttx/kernel_with_dhtb.bin ]; then
           echo "Repacking NuttX PAC..."
-          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_full.pac Kernel=nuttx/kernel_with_dhtb.bin || echo "NuttX repack failed, continuing"
+          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_full.pac kernel.bin=nuttx/kernel_with_dhtb.bin || echo "NuttX repack failed, continuing"
           ls -lh qlyx_x30_nuttx_full.pac 2>&1 || true
         else
           echo "nuttx/kernel_with_dhtb.bin not found — skipping NuttX PAC (bare-metal PAC is primary)"
