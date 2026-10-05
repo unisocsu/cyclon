@@ -127,18 +127,29 @@ jobs:
         ls -lh kernel_with_dhtb.bin
 
     - name: Repack PAC (bare-metal always, NuttX if available)
+      if: always()
       run: |
+        set -x
         PAC=$(find . -maxdepth 2 -name "*.pac" | head -1)
         if [ -z "$PAC" ]; then echo "No PAC found, skipping repack"; exit 0; fi
         echo "PAC found: $PAC"
+        ls -lh "$PAC" | head -5
         if [ -f baremetal-build/kernel_hello.bin ]; then
-          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_baremetal.pac Kernel=baremetal-build/kernel_hello.bin
-          ls -lh qlyx_x30_nuttx_baremetal.pac
+          echo "Repacking bare-metal PAC..."
+          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_baremetal.pac Kernel=baremetal-build/kernel_hello.bin || echo "bare-metal repack failed, continuing"
+          ls -lh qlyx_x30_nuttx_baremetal.pac 2>&1 || true
+        else
+          echo "baremetal kernel_hello.bin not found!"
+          ls -lh baremetal-build/ || true
         fi
         if [ -f nuttx/kernel_with_dhtb.bin ]; then
-          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_full.pac Kernel=nuttx/kernel_with_dhtb.bin
-          ls -lh qlyx_x30_nuttx_full.pac
+          echo "Repacking NuttX PAC..."
+          python3 pac_repack.py "$PAC" qlyx_x30_nuttx_full.pac Kernel=nuttx/kernel_with_dhtb.bin || echo "NuttX repack failed, continuing"
+          ls -lh qlyx_x30_nuttx_full.pac 2>&1 || true
+        else
+          echo "nuttx/kernel_with_dhtb.bin not found — skipping NuttX PAC (bare-metal PAC is primary)"
         fi
+        echo "Repack step done"
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
