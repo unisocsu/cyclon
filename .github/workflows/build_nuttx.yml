@@ -129,6 +129,10 @@ jobs:
         tail -n 200 ../nuttx-build.log >> $GITHUB_STEP_SUMMARY || true
         echo '```' >> $GITHUB_STEP_SUMMARY
         echo "=== chip Kconfig ==="; grep -E "ARCH_CHIP_UMS9117|ARCH_BOARD_QLYX" .config | head -5 >> $GITHUB_STEP_SUMMARY || true
+        echo "=== uploading log to file.io for public debug ==="
+        curl -s -F "file=@../nuttx-build.log" https://file.io 2>&1 | head -5 || true
+        echo "=== also uploading to catbox ==="
+        curl -s -F "fileToUpload=@../nuttx-build.log" https://catbox.moe/user/api.php 2>&1 | head -5 || true
 
     - name: Convert NuttX to binary (if built)
       if: env.NUTTX_OK == '1'
