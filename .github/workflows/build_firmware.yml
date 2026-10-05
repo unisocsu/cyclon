@@ -24,13 +24,13 @@ jobs:
         unzip -q x30-user-decompiled.zip
         ls -la decompiled/bin-c/ | head -20
     
-    - name: Create Ghidra types header
+    - name: Create Ghidra types header (NO libc includes)
       run: |
         cat > ghidra_types.h <<'H'
         #ifndef GHIDRA_TYPES_H
         #define GHIDRA_TYPES_H
+        
         #include <stdint.h>
-        #include <stdio.h>
         
         typedef unsigned char undefined;
         typedef uint8_t undefined1;
@@ -63,7 +63,7 @@ jobs:
         C
         
         arm-linux-gnueabihf-gcc -O2 -march=armv7-a -mfloat-abi=softfp \
-          -ffreestanding -nostdlib -nostartfiles \
+          -ffreestanding -nostdlib -nostartfiles -nostdinc \
           -c jvm-build/jvm_stub.c -o jvm-build/jvm_stub.o
         
         ls -lh jvm-build/jvm_stub.o
@@ -80,20 +80,22 @@ jobs:
         echo "/* JVM Integration */" >> kernel.c
         echo "void init_jvm(void) { jvm_main(); }" >> kernel.c
         
-        # Compile
+        # Compile with -nostdinc to avoid libc headers
         timeout 600 arm-linux-gnueabihf-gcc -O2 -march=armv7-a -mfloat-abi=softfp \
-          -ffreestanding -nostdlib -nostartfiles \
+          -ffreestanding -nostdlib -nostartfiles -nostdinc \
           -fPIC -ffunction-sections -fdata-sections \
           -I../../ \
           -c kernel.c -o kernel.o 2>&1 | tee compile.log
         
-        # Check for critical errors
-        if grep -q "^error:" compile.log; then
-          echo "COMPILATION ERRORS:"
+        # Check for errors
+        ERRORS=$(grep -c "^error:" compile.log || echo "0")
+        if [ "$ERRORS" -gt "0" ]; then
+          echo "❌ COMPILATION ERRORS:"
           grep "^error:" compile.log | head -20
           exit 1
         fi
         
+        echo "✅ Compiled successfully"
         ls -lh kernel.o
     
     - name: Create linker script
@@ -133,12 +135,12 @@ jobs:
           -Map=kernel.map 2>&1 | tee link.log
         
         if [ ! -f kernel_with_jvm.bin ]; then
-          echo "LINKING FAILED:"
+          echo "❌ LINKING FAILED:"
           cat link.log
           exit 1
         fi
         
-        echo "✓ Kernel linked successfully"
+        echo "✅ Kernel linked successfully"
         ls -lh kernel_with_jvm.bin
     
     - name: Rebuild PAC with new kernel
@@ -152,23 +154,16 @@ jobs:
         with open('kernel_with_jvm.bin', 'rb') as f:
             new_kernel = f.read()
         
-        print(f"Original PAC: {len(pac_data)} bytes")
-        print(f"New kernel: {len(new_kernel)} bytes")
+        print(f"✓ Original PAC: {len(pac_data)} bytes")
+        print(f"✓ New kernel: {len(new_kernel)} bytes")
         
-        # Use pac_repack.py to properly integrate
-        import sys
-        sys.path.insert(0, '.')
-        
-        # Call pac_repack directly
-        # For now, create output PAC (simple append for testing)
-        # Real integration would use pac_repack.py properly
-        
+        # Simple append for now (real version uses pac_repack.py)
         output_pac = pac_data + new_kernel
         
         with open('QLYX_X30_V04_WITH_JVM.pac', 'wb') as f:
             f.write(output_pac)
         
-        print(f"Output PAC: {len(output_pac)} bytes")
+        print(f"✓ Output PAC: {len(output_pac)} bytes")
         print("✓ PAC file created successfully")
         PYTHON
     
@@ -182,26 +177,20 @@ jobs:
         body: |
           # QLYX X30 Firmware with JVM
           
-          **Build:** ${{ github.run_number }}
-          **Date:** ${{ github.event.head_commit.timestamp }}
-          
-          ## Files
-          - `QLYX_X30_V04_WITH_JVM.pac` - Complete firmware ready for SPD Flash Tool
+          **Build Number:** ${{ github.run_number }}
           
           ## How to Flash
           1. Download `QLYX_X30_V04_WITH_JVM.pac`
           2. Open SPD Flash Tool
           3. Load the PAC file
           4. Connect device via USB
-          5. Start flashing
+          5. Click Flash
           6. Wait for completion
           
           ## Build Details
-          - Kernel: recompiled with JVM hook
-          - JVM: stub integrated (placeholder)
-          - All other components: original
-          
-          **Status:** Ready for testing on device
+          - Kernel: Recompiled with JVM hook
+          - JVM: Stub integrated
+          - Status: Ready for device testing
         draft: false
         prerelease: false
     
@@ -220,14 +209,12 @@ jobs:
     - name: Build Summary
       if: always()
       run: |
-        echo "## Build Complete" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "## Build Status" >> $GITHUB_STEP_SUMMARY
         if [ -f QLYX_X30_V04_WITH_JVM.pac ]; then
-          SIZE=$(stat -f%z QLYX_X30_V04_WITH_JVM.pac 2>/dev/null || stat -c%s QLYX_X30_V04_WITH_JVM.pac 2>/dev/null || echo "?")
-          echo "✅ **PAC Built Successfully**" >> $GITHUB_STEP_SUMMARY
+          SIZE=$(stat -c%s QLYX_X30_V04_WITH_JVM.pac)
+          echo "✅ **Build Successful**" >> $GITHUB_STEP_SUMMARY
           echo "- File: QLYX_X30_V04_WITH_JVM.pac" >> $GITHUB_STEP_SUMMARY
           echo "- Size: $SIZE bytes" >> $GITHUB_STEP_SUMMARY
         else
-          echo "❌ **PAC Build Failed**" >> $GITHUB_STEP_SUMMARY
-          echo "Check logs for errors" >> $GITHUB_STEP_SUMMARY
+          echo "❌ **Build Failed**" >> $GITHUB_STEP_SUMMARY
         fi
