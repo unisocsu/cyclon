@@ -107,6 +107,8 @@ jobs:
     - name: Build NuttX (full)
       id: nuttx_build
       continue-on-error: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         set -o pipefail
         cd nuttx
@@ -132,20 +134,21 @@ jobs:
         tail -n 200 ../nuttx-build.log >> $GITHUB_STEP_SUMMARY || true
         echo '```' >> $GITHUB_STEP_SUMMARY
         echo "=== chip Kconfig ==="; grep -E "ARCH_CHIP_UMS9117|ARCH_BOARD_QLYX" .config | head -5 >> $GITHUB_STEP_SUMMARY || true
-        echo "=== uploading log to paste.rs for public debug ==="
-        PASTE_URL=$(curl --data-binary @../nuttx-build.log https://paste.rs 2>&1 | head -1 || true)
-        echo "paste.rs URL: $PASTE_URL"
-        echo "paste.rs URL: $PASTE_URL" >> $GITHUB_STEP_SUMMARY
-        echo "::notice::nuttx-build log: $PASTE_URL"
-        if [ -n "$PASTE_URL" ]; then
-          echo "$PASTE_URL" | tr -d '\r' > /tmp/nuttx_log_url.txt
+        echo "=== uploading log to gist for public debug ==="
+        LOG_JSON=$(cat ../nuttx-build.log | head -c 8000 | python3 -c "import json,sys; d=sys.stdin.read(); print(json.dumps(d))")
+        GIST_RESP=$(curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" -H "Accept: application/vnd.github.v3+json" -d "{\"public\":true,\"files\":{\"nuttx-build.log\":{\"content\":$LOG_JSON}}}" https://api.github.com/gists 2>&1 || true)
+        GIST_URL=$(echo "$GIST_RESP" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('html_url',''))" 2>&1 || true)
+        echo "gist URL: $GIST_URL"
+        echo "gist URL: $GIST_URL" >> $GITHUB_STEP_SUMMARY
+        echo "::notice::nuttx-build gist: $GIST_URL"
+        if [ -n "$GIST_URL" ]; then
+          echo "$GIST_URL" > /tmp/nuttx_gist_url.txt
           mkdir -p docs
-          cp /tmp/nuttx_log_url.txt docs/nuttx-log-url.txt
-          echo "Log URL saved"
+          cp /tmp/nuttx_gist_url.txt docs/nuttx-gist-url.txt
         fi
         if [ ! -f nuttx ]; then
-          echo "::error::NuttX build failed — see log tail below"
-          tail -n 30 ../nuttx-build.log | while IFS= read -r line; do echo "::error::$line"; done || true
+          echo "::warning::NuttX build failed — see $GIST_URL"
+          echo "::error::$(tail -n 20 ../nuttx-build.log | head -n 5 | tr '\n' ';')"
         fi
         cp ../nuttx-build.log ../nuttx-build-latest.log || true
 
