@@ -144,7 +144,8 @@ jobs:
           echo "Log URL saved"
         fi
         if [ ! -f nuttx ]; then
-          echo "::warning::NuttX build failed — see $PASTE_URL"
+          echo "::error::NuttX build failed — see log tail below"
+          tail -n 30 ../nuttx-build.log | while IFS= read -r line; do echo "::error::$line"; done || true
         fi
         cp ../nuttx-build.log ../nuttx-build-latest.log || true
 
