@@ -132,18 +132,19 @@ jobs:
         tail -n 200 ../nuttx-build.log >> $GITHUB_STEP_SUMMARY || true
         echo '```' >> $GITHUB_STEP_SUMMARY
         echo "=== chip Kconfig ==="; grep -E "ARCH_CHIP_UMS9117|ARCH_BOARD_QLYX" .config | head -5 >> $GITHUB_STEP_SUMMARY || true
-        echo "=== uploading log to file.io for public debug ==="
-        FILEIO_URL=$(curl -s -F "file=@../nuttx-build.log" https://file.io 2>&1 | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('link',''))" 2>&1 || true)
-        echo "file.io URL: $FILEIO_URL"
-        echo "file.io URL: $FILEIO_URL" >> $GITHUB_STEP_SUMMARY
-        if [ -n "$FILEIO_URL" ]; then
-          echo "$FILEIO_URL" > /tmp/nuttx_log_url.txt
+        echo "=== uploading log to paste.rs for public debug ==="
+        PASTE_URL=$(curl --data-binary @../nuttx-build.log https://paste.rs 2>&1 | head -1 || true)
+        echo "paste.rs URL: $PASTE_URL"
+        echo "paste.rs URL: $PASTE_URL" >> $GITHUB_STEP_SUMMARY
+        echo "::notice::nuttx-build log: $PASTE_URL"
+        if [ -n "$PASTE_URL" ]; then
+          echo "$PASTE_URL" | tr -d '\r' > /tmp/nuttx_log_url.txt
           mkdir -p docs
           cp /tmp/nuttx_log_url.txt docs/nuttx-log-url.txt
-          echo "Log URL saved to docs/nuttx-log-url.txt"
+          echo "Log URL saved"
         fi
         if [ ! -f nuttx ]; then
-          echo "::error::NuttX build failed — $(tail -n 30 ../nuttx-build.log | tr '\n' ';' | cut -c1-800)"
+          echo "::warning::NuttX build failed — see $PASTE_URL"
         fi
         cp ../nuttx-build.log ../nuttx-build-latest.log || true
 
