@@ -133,6 +133,18 @@ jobs:
         curl -s -F "file=@../nuttx-build.log" https://file.io 2>&1 | head -5 || true
         echo "=== also uploading to catbox ==="
         curl -s -F "fileToUpload=@../nuttx-build.log" https://catbox.moe/user/api.php 2>&1 | head -5 || true
+        if [ ! -f nuttx ]; then
+          echo "::error::NuttX build failed — $(tail -n 30 ../nuttx-build.log | tr '\n' ';' | cut -c1-800)"
+        fi
+        cp ../nuttx-build.log ../nuttx-build-latest.log || true
+
+    - name: Publish build log
+      if: always()
+      run: |
+        mkdir -p docs
+        cp nuttx-build.log docs/nuttx-build-latest.log 2>/dev/null || cp ../nuttx-build.log docs/nuttx-build-latest.log 2>/dev/null || true
+        ls -lh docs/nuttx-build-latest.log 2>&1 | head -5
+        echo "=== tail ==="; tail -n 100 docs/nuttx-build-latest.log 2>&1 | head -n 100 || true
 
     - name: Convert NuttX to binary (if built)
       if: env.NUTTX_OK == '1'
