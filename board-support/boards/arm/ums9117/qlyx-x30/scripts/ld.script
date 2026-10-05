@@ -1,0 +1,54 @@
+/* ld.script — UNISOC UMS9117 NuttX Linker Script
+ *
+ * Memory layout verified from kernel.bin:
+ *   DHTB header at 0x80a06000 (512 bytes)
+ *   ARM vector table at 0x80a06200
+ *   Code entry at 0x80a0623c
+ *
+ * NuttX loads AFTER the DHTB header.
+ * The DHTB header is prepended by the build system (see workflow).
+ */
+
+MEMORY
+{
+  FLASH (rx)  : ORIGIN = 0x80a06200, LENGTH = 12M
+  RAM   (rwx) : ORIGIN = 0x80a06200, LENGTH = 12M
+}
+
+OUTPUT_FORMAT("elf32-littlearm")
+OUTPUT_ARCH(arm)
+ENTRY(_start)
+
+SECTIONS
+{
+  /* Vector table — must be at the start */
+  .text :
+  {
+    KEEP(*(.vectors))
+    *(.text .text.*)
+    *(.rodata .rodata.*)
+  } > RAM
+
+  /* Initialized data */
+  .data :
+  {
+    _sdata = .;
+    *(.data .data.*)
+    *(.sdata .sdata.*)
+    _edata = .;
+  } > RAM
+
+  /* BSS */
+  .bss :
+  {
+    _sbss = .;
+    *(.bss .bss.*)
+    *(.sbss .sbss.*)
+    *(COMMON)
+    _ebss = .;
+  } > RAM
+
+  /* Stack — grow down from top of RAM */
+  _eheap = ORIGIN(RAM) + LENGTH(RAM);
+  _sstack = _eheap - CONFIG_STACK_SIZE;
+}
