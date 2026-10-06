@@ -22,14 +22,15 @@ jobs:
           echo "GHIDRA_DIR=$(find /opt/ghidra -maxdepth 1 -type d -name 'ghidra_*' | head -n1)" >> $GITHUB_ENV
       - name: Decompile snake.bin
         run: |
-          set -e
+          set -x
           mkdir -p decompiled/snake
-          # snake has DHTB 512 header
           dd if=prebuilt/usb_t117/snake.bin of=/tmp/snake.payload bs=512 skip=1 status=none
           echo "payload $(stat -c%s /tmp/snake.payload) bytes"
+          hexdump -C /tmp/snake.payload | head -5
           mkdir -p /tmp/ghidra-snake
-          $GHIDRA_DIR/support/analyzeHeadless /tmp/ghidra-snake snake -import /tmp/snake.payload -processor "ARM:LE:32:v7" -scriptPath $PWD/tools -postScript ExportDecompiledC.java $PWD/decompiled/snake/snake.c -deleteProject || true
-          ls -lh decompiled/snake/
+          $GHIDRA_DIR/support/analyzeHeadless /tmp/ghidra-snake snake -import /tmp/snake.payload -loader BinaryLoader -processor "ARM:LE:32:v7" -analysisTimeoutPerFile 600 -scriptPath $PWD/tools -postScript ExportDecompiledC.java $PWD/decompiled/snake/snake.c -deleteProject || echo "ghidra exit $?"
+          ls -R decompiled/snake/ || true
+          cat decompiled/snake/snake.c 2>&1 | head -n 100 || true
       - uses: actions/upload-artifact@v4
         with:
           name: snake-decompiled
