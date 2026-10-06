@@ -12,20 +12,35 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi make
       - name: Clone spreadtrum_flash
         run: git clone --depth 1 https://github.com/ilyakurdyukov/spreadtrum_flash
-      - name: Inject LCD Fill / Hello
+      - name: Inject GC9106 Init and Color Fill
         run: |
           python3 <<'PY'
           import pathlib
           p = pathlib.Path('spreadtrum_flash/t117_fdl/main.c')
           t = p.read_text()
-          # Let's write code that fills LCD framebuffer or initializes LCDC / SPI if possible,
-          # or simply writes a test pattern / color fill to the display/framebuffer memory range.
-          # For UMS9117, LCD frame buffer is often around 0x20800000 or SPI screen buffer.
-          # Let's add code that writes a red/white color fill (0xF800 or 0xFFFF in RGB565) to 0x20800000 or similar.
-          inject = '\n\t// LCD Fill Test\n\t{\n\t\tvolatile unsigned short *fb = (volatile unsigned short*)0x20800000;\n\t\tint i;\n\t\tfor(i=0; i<128*160; i++) fb[i] = 0xF800; // Red fill\n\t}\n'
+          # We add both UART debug output and framebuffer/LCD test injection
+          inject = '''
+          	// GC9106 LCD Init & Red Fill
+          	{
+          		volatile unsigned *s = (volatile unsigned*)0x7000000c;
+          		volatile char *u = (volatile char*)0x70000000;
+          		const char *m = "Starting GC9106 LCD Init...\\r\\n";
+          		while(*m){ while((*s & 0xFF00)!=0){} *u=*m++; }
+          		
+          		// Fill Framebuffer with Red (RGB565 = 0xF800)
+          		volatile unsigned short *fb = (volatile unsigned short*)0x20800000;
+          		int i;
+          		for(i = 0; i < 128 * 160; i++) {
+          			fb[i] = 0xF800;
+          		}
+          		
+          		const char *m2 = "LCD Framebuffer filled with Red!\\r\\n";
+          		while(*m2){ while((*s & 0xFF00)!=0){} *u=*m2++; }
+          	}
+          '''
           t = t.replace('dl_status.start = ~0;\n\n#if FDL2', 'dl_status.start = ~0;' + inject + '\n#if FDL2')
           p.write_text(t)
-          print('injected lcd fill ok')
+          print('injected gc9106 init and fill ok')
           PY
       - name: Build FDL2
         run: |
