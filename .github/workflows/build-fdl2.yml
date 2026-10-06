@@ -12,16 +12,20 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi make
       - name: Clone spreadtrum_flash
         run: git clone --depth 1 https://github.com/ilyakurdyukov/spreadtrum_flash
-      - name: Inject Hello
+      - name: Inject LCD Fill / Hello
         run: |
           python3 <<'PY'
           import pathlib
           p = pathlib.Path('spreadtrum_flash/t117_fdl/main.c')
           t = p.read_text()
-          inject = '\n\t// Hello\n\t{ volatile unsigned *s = (volatile unsigned*)0x7000000c; volatile char *u = (volatile char*)0x70000000; const char *m = "Hello from Custom FDL2!\\r\\n"; while(*m){ while((*s & 0xFF00)!=0){} *u=*m++; } }\n'
+          # Let's write code that fills LCD framebuffer or initializes LCDC / SPI if possible,
+          # or simply writes a test pattern / color fill to the display/framebuffer memory range.
+          # For UMS9117, LCD frame buffer is often around 0x20800000 or SPI screen buffer.
+          # Let's add code that writes a red/white color fill (0xF800 or 0xFFFF in RGB565) to 0x20800000 or similar.
+          inject = '\n\t// LCD Fill Test\n\t{\n\t\tvolatile unsigned short *fb = (volatile unsigned short*)0x20800000;\n\t\tint i;\n\t\tfor(i=0; i<128*160; i++) fb[i] = 0xF800; // Red fill\n\t}\n'
           t = t.replace('dl_status.start = ~0;\n\n#if FDL2', 'dl_status.start = ~0;' + inject + '\n#if FDL2')
           p.write_text(t)
-          print('injected ok')
+          print('injected lcd fill ok')
           PY
       - name: Build FDL2
         run: |
