@@ -8,11 +8,11 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi
       - run: |
           set -x
-          cat baremetal-build/ram_hello.c
+          cat baremetal-build/ram_hello_fdl.c
           arm-none-eabi-gcc --version
-          arm-none-eabi-gcc -mcpu=cortex-a7 -mthumb -nostdlib -ffreestanding -c baremetal-build/ram_hello.c -o /tmp/ram_hello.o -Wall -v || (echo "gcc failed $?" ; cat /tmp/ram_hello.o 2>&1 | head; exit 1)
-          arm-none-eabi-ld -T baremetal-build/link.ld /tmp/ram_hello.o -o /tmp/ram_hello.elf || arm-none-eabi-gcc -mcpu=cortex-a7 -mthumb -nostdlib -Wl,-T,baremetal-build/link.ld /tmp/ram_hello.o -o /tmp/ram_hello.elf
-          arm-none-eabi-objcopy -O binary /tmp/ram_hello.elf baremetal-build/ram_hello_fprun.bin
+          arm-none-eabi-gcc -mcpu=cortex-a7 -mthumb -nostdlib -ffreestanding -c baremetal-build/ram_hello_fdl.c -o /tmp/ram_hello.o -Wall -v
+          arm-none-eabi-ld -T baremetal-build/link_fdl.ld /tmp/ram_hello.o -o /tmp/ram_hello.elf
+          arm-none-eabi-objcopy -O binary /tmp/ram_hello.elf baremetal-build/ram_hello_fdl.bin
           ls -lh baremetal-build/ram_hello*
       - uses: actions/upload-artifact@v4
         with: { name: hello-c, path: baremetal-build/ram_hello*.bin }
