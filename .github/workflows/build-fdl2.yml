@@ -10,25 +10,7 @@ jobs:
       - name: Clone spreadtrum_flash
         run: git clone --depth 1 https://github.com/ilyakurdyukov/spreadtrum_flash
       - name: Inject Hello
-        run: |
-          cat > /tmp/inject.py << 'PY'
-          import pathlib
-          p = pathlib.Path('spreadtrum_flash/t117_fdl/main.c')
-          t = p.read_text()
-          inject = '''
-\t// --- Hello World injected for QLYX X30 ---
-\t{
-\t\tvolatile unsigned *uart_st = (volatile unsigned*)0x7000000c;
-\t\tvolatile char *uart_tx = (volatile char*)0x70000000;
-\t\tconst char *msg = "Hello from Custom FDL2 at 0x80100000!\\r\\n";
-\t\twhile (*msg) { while ((*uart_st & 0xFF00) != 0) {} *uart_tx = *msg++; }
-\t}
-\t// --- end Hello ---\n'''
-          t = t.replace('dl_status.start = ~0;\n\n#if FDL2', 'dl_status.start = ~0;' + inject + '\n#if FDL2')
-          p.write_text(t)
-          print(p.read_text()[2000:3000])
-          PY
-          python3 /tmp/inject.py
+        run: python3 -c "import pathlib; p=pathlib.Path('spreadtrum_flash/t117_fdl/main.c'); t=p.read_text(); inject='\n\t// Hello\n\t{ volatile unsigned *s=(volatile unsigned*)0x7000000c; volatile char *u=(volatile char*)0x70000000; const char *m=\"Hello from Custom FDL2 at 0x80100000!\\r\\n\"; while(*m){while((*s & 0xFF00)!=0){} *u=*m++;}}\n'; t=t.replace('dl_status.start = ~0;\n\n#if FDL2','dl_status.start = ~0;'+inject+'\n#if FDL2'); p.write_text(t); print('injected')"
       - name: Build FDL2
         run: |
           cd spreadtrum_flash/t117_fdl
