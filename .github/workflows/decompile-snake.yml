@@ -1,0 +1,37 @@
+name: Decompile Snake to C
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "prebuilt/usb_t117/snake.bin"
+      - ".github/workflows/decompile-snake.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  decompile-snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Ghidra
+        run: |
+          url="$(python3 -c 'import json,urllib.request; d=json.load(urllib.request.urlopen("https://api.github.com/repos/NationalSecurityAgency/ghidra/releases/latest")); print(d["assets"][0]["browser_download_url"])')"
+          wget -q "$url" -O /tmp/ghidra.zip
+          mkdir -p /opt/ghidra && unzip -q /tmp/ghidra.zip -d /opt/ghidra
+          echo "GHIDRA_DIR=$(find /opt/ghidra -maxdepth 1 -type d -name 'ghidra_*' | head -n1)" >> $GITHUB_ENV
+      - name: Decompile snake.bin
+        run: |
+          set -e
+          mkdir -p decompiled/snake
+          # snake has DHTB 512 header
+          dd if=prebuilt/usb_t117/snake.bin of=/tmp/snake.payload bs=512 skip=1 status=none
+          echo "payload $(stat -c%s /tmp/snake.payload) bytes"
+          mkdir -p /tmp/ghidra-snake
+          $GHIDRA_DIR/support/analyzeHeadless /tmp/ghidra-snake snake -import /tmp/snake.payload -processor "ARM:LE:32:v7" -scriptPath $PWD/tools -postScript ExportDecompiledC.java $PWD/decompiled/snake/snake.c -deleteProject || true
+          ls -lh decompiled/snake/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: snake-decompiled
+          path: decompiled/snake/
