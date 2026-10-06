@@ -1,0 +1,15 @@
+name: Build Hello C
+on: { workflow_dispatch: {}, push: { paths: ["baremetal-build/ram_hello.c","baremetal-build/hello_lcd.c"] } }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi
+      - run: |
+          arm-none-eabi-gcc -mcpu=cortex-a7 -mthumb -nostdlib -ffreestanding -c baremetal-build/ram_hello.c -o /tmp/ram_hello.o
+          arm-none-eabi-ld -T baremetal-build/link.ld /tmp/ram_hello.o -o /tmp/ram_hello.elf || arm-none-eabi-gcc -mcpu=cortex-a7 -mthumb -nostdlib -Wl,-T,baremetal-build/link.ld /tmp/ram_hello.o -o /tmp/ram_hello.elf
+          arm-none-eabi-objcopy -O binary /tmp/ram_hello.elf baremetal-build/ram_hello_fprun.bin
+          ls -lh baremetal-build/ram_hello*
+      - uses: actions/upload-artifact@v4
+        with: { name: hello-c, path: baremetal-build/ram_hello*.bin }
