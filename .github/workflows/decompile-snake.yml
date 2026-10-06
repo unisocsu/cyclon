@@ -17,8 +17,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Ghidra
         run: |
-          url="$(python3 -c 'import json,urllib.request; d=json.load(urllib.request.urlopen("https://api.github.com/repos/NationalSecurityAgency/ghidra/releases/latest")); print(d["assets"][0]["browser_download_url"])')"
-          wget -q "$url" -O /tmp/ghidra.zip
+          wget -q https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_11.2.1_build/ghidra_11.2.1_PUBLIC_20241105.zip -O /tmp/ghidra.zip
           mkdir -p /opt/ghidra && unzip -q /tmp/ghidra.zip -d /opt/ghidra
           echo "GHIDRA_DIR=$(find /opt/ghidra -maxdepth 1 -type d -name 'ghidra_*' | head -n1)" >> $GITHUB_ENV
       - name: Decompile snake.bin
