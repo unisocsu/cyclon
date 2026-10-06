@@ -16,7 +16,7 @@ static void uart_putc(char c){
 static void uart_puts(const char *s){ while(*s) uart_putc(*s++); }
 static void delay(volatile uint32_t n){ while(n--) __asm__ volatile("nop"); }
 
-void _start(void) __attribute__((naked,noreturn));
+void _start(void) __attribute__((noreturn));
 void _start(void){
     uart_puts("\r\n=== Cyclon RAM Hello World ===\r\n");
     uart_puts("Chip UMS9117 0x98180001\r\n");
