@@ -13,7 +13,16 @@ jobs:
       - name: Clone spreadtrum_flash
         run: git clone --depth 1 https://github.com/ilyakurdyukov/spreadtrum_flash
       - name: Inject Hello
-        run: python3 -c "import pathlib; p=pathlib.Path('spreadtrum_flash/t117_fdl/main.c'); t=p.read_text(); inject='\n\t// Hello\n\t{ volatile unsigned *s=(volatile unsigned*)0x7000000c; volatile char *u=(volatile char*)0x70000000; const char *m=\"Hello from Custom FDL2 at 0x80100000!\\r\\n\"; while(*m){while((*s & 0xFF00)!=0){} *u=*m++;}}\n'; t=t.replace('dl_status.start = ~0;\n\n#if FDL2','dl_status.start = ~0;'+inject+'\n#if FDL2'); p.write_text(t); print('injected')"
+        run: |
+          python3 <<'PY'
+          import pathlib
+          p = pathlib.Path('spreadtrum_flash/t117_fdl/main.c')
+          t = p.read_text()
+          inject = '\n\t// Hello\n\t{ volatile unsigned *s = (volatile unsigned*)0x7000000c; volatile char *u = (volatile char*)0x70000000; const char *m = "Hello from Custom FDL2!\\r\\n"; while(*m){ while((*s & 0xFF00)!=0){} *u=*m++; } }\n'
+          t = t.replace('dl_status.start = ~0;\n\n#if FDL2', 'dl_status.start = ~0;' + inject + '\n#if FDL2')
+          p.write_text(t)
+          print('injected ok')
+          PY
       - name: Build FDL2
         run: |
           cd spreadtrum_flash/t117_fdl
