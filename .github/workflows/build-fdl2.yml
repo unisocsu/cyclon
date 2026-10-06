@@ -1,5 +1,8 @@
 name: Build T117 FDL2 Hello
-on: workflow_dispatch
+on:
+  push:
+    paths: ['.github/workflows/build-fdl2.yml']
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
