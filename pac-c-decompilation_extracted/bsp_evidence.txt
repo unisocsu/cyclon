@@ -1,0 +1,500 @@
+﻿C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2099: FUN_00001e28(s_input_of_get_sechdr_Addr_err_00001814);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2573: FUN_00001e28(s_boot0_nand_flash_ID___0x_0x__00001bbc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2650: FUN_00001e28(s_boot0_nand_set_param_fail__00001bdc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2654: FUN_00001e28(s_fdl2_not_fand_NandFlash_ID_in_Na_00001bf8,local_3c & 0xff,local_3c._1_1_);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2657: FUN_00001e28(s_boot0_read_Nand_ID_fail__00001ba0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2784: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2798: FUN_000034f8(s___DDR_init_start_000031ce + 2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2829: FUN_000034f8(s_lpddr_powerup_init_end_00003230);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2848: FUN_000034f8(s___DDR_init_OK_00003289 + 3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3042: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3059: FUN_00001e28(s___adi_reg_read_timeout__000022d6 + 2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3070: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3093: FUN_00001e28(s_adi_reg_write_timeout__000022f0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3105: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3243: FUN_00001e28(s_boot0_UART_JTAG_mode____d_00002514,iVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3373: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3575: FUN_000034f8(s_DDR_dpll_clk_get_begin_00002a08);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3578: FUN_000034f8(s_DDR_dpll_clk_get_end_00002a24);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3616: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3689: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3729: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3785: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3844: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3870: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3911: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4064: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4129: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4235: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4358: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4380: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4400: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4453: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4511: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4523: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4535: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4553: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4667: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4683: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4733: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4749: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4847: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4866: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4972: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5012: pcVar3 = s_dmc_lpddr3_rde_training_neg_fail_0000463c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5016: pcVar3 = s_dmc_lpddr3_rde_training_pos_fail_00004614;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5020: pcVar3 = s_dmc_lpddr3_wde_training_Failed_000045f0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5036: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5057: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5085: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:2589: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:2691: if ((*DAT_0000290c == s_DHTBinvalid_kernel_img_magic_00002910._0_4_) && (DAT_0000290c[1] == 1))
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:2702: pcVar3 = s_DHTBinvalid_kernel_img_magic_00002910 + 4;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4142: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4159: FUN_00002aa8(s___adi_reg_read_timeout__000040b6 + 2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4170: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4193: FUN_00002aa8(s_adi_reg_write_timeout__000040d0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4205: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:927: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:1521: FUN_0000019c(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_00001ae8,s_sio_c_00001ac4,0x1d1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:1855: FUN_0000019c(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_00002a2c,s_sio_sync_ops_c_00002a1c,0x92);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:3087: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4285: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4372: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5487: func_0x0002c344(s_ADI_IS_Analogdie_reg_addr__000085b4,s_adi_phy_c_000085a8,0x67);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5503: uVar4 = func_0x0002c334(s_ANA_Read__addr___0x_x__val___0x__000085d8,param_1,uVar5);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5504: func_0x0002c338(DAT_00008608,s_adi_phy_c_000085fc,0x3a,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5526: func_0x0002c344(s_ADI_IS_Analogdie_reg_addr__000085b4,s_adi_phy_c_000085a8,0x7a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6789: iVar2 = FUN_0000b6a6(s_spipe_0000a368,0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:7309: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:7380: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:7497: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:7554: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:3002: (*(code *)0x36f1)(0x5080,s_hw_radio_c_00005074,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:3030: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:3964: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4664: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4813: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:6687: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20286: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:22374: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:23109: FUN_0000aad0(0x1f,s_addr_<_AP_DDR_BASE___SMEM_SIZE_&_00001604 + 0x29);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:27852: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:54664: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:84749: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:88735: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:89431: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:89518: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:90435: FUN_00067ed8(s_ADI_IS_Analogdie_reg_addr__0006ab7c,s_adi_phy_c_0006ab70,0x67);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:90451: uVar4 = FUN_00067eac(s_ANA_Read__addr___0x_x__val___0x__0006aba0,param_1,uVar5);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:90452: FUN_00067f26(DAT_0006abd0,s_adi_phy_c_0006abc4,0x3a,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:90474: FUN_00067ed8(s_ADI_IS_Analogdie_reg_addr__0006ab7c,s_adi_phy_c_0006ab70,0x7a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:91023: FUN_00067ed8(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_0006bbfc,s_sio_c_0006bbd8,0x1d1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:92240: FUN_00067ed8(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_0006d73c,s_sio_sync_ops_c_0006d72c,0x92);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:92890: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:92961: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:93078: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:93274: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:764: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:792: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:827: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1029: FUN_00002fc8(s_DDR_dpll_clk_get_begin_0000139c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1032: FUN_00002fc8(s_DDR_dpll_clk_get_end_000013b8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1070: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1143: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1183: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1239: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:1298: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2106: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2143: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2266: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2288: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2341: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2353: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2365: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2383: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2497: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2547: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2645: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2664: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2770: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2810: pcVar3 = s_dmc_lpddr3_rde_training_neg_fail_0000410c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2814: pcVar3 = s_dmc_lpddr3_rde_training_pos_fail_000040e4;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2818: pcVar3 = s_dmc_lpddr3_wde_training_Failed_000040c0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2834: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:3629: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3340: pcVar3 = s_fdl2_NANDCTL_Open_failed__000037f0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3346: FUN_00005c74(s_fdl2_NANDCTL_ReadID_failed__0000380c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3351: FUN_00005c74(s_fdl2_nand_flash_ID___0x_0x__0000382c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3356: FUN_00005c74(s_fdl2_not_fand_NandFlash_ID_in_Na_0000384c,local_28 & 0xff,local_28._1_1_);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3407: FUN_00005c74(s_fdl2_nand_flash_init_success__00003cf8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:4887: FUN_00005c74(s_nand_init_failed__0x_0x__00005b10,iVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7174: FUN_00005c74(s_uart_crc_error_0000ab40);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7207: FUN_00005c74(s_usb_crc_error_0000aaf8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7645: pcVar2 = s_nand_partiition_copy_dst_info_SC_0000b22c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7650: pcVar2 = s_nand_partiition_copy_dst_info_SC_0000b26c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7657: pcVar2 = s_nand_partiition_copy_dst_info_SC_0000b2ac;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7663: pcVar2 = s_nand_partiition_copy_dst_info_SC_0000b2ec;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7668: FUN_00005c74(s_nand_partiition_copy_dst_info_SC_0000b1f8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:8619: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:11265: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:56: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:120: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:182: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:243: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:304: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:364: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:424: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:483: uVar2 = coproc_movefrom_Instruction_Fault_Address();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2544: FUN_000009f8(s_boot0_UART_JTAG_mode____d_00002034,iVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2642: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2659: FUN_000009f8(s___adi_reg_read_timeout__00002152 + 2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2670: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2693: FUN_000009f8(s_adi_reg_write_timeout__0000216c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2705: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2773: pcVar3 = s_vddusb_000024cc;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2781: pcVar3 = s_vddsdio_0000248c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2826: pcVar3 = s_vddrfa1v8_00002460;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2848: pcVar3 = s_vddemmccore_000024e0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2933: pcVar3 = s_dcdcarm_0000243c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3467: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:6881: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:7537: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8075: uVar7 = FUN_000006e8(&DAT_00008388,s_spi_phy_v5_c_00008378,0x111,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8129: uVar7 = FUN_000006e4(&DAT_00008388,s_spi_phy_v5_c_00008378);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8211: pcVar5 = (code *)FUN_000006e8(&DAT_00008388,s_spi_phy_v5_c_00008378,0x1a6,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8263: pcVar5 = (code *)FUN_000006e4(&DAT_00008388,s_spi_phy_v5_c_00008378);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8375: FUN_000006e4(s_s_spi_irq_ctx_spi_rw_remain_size_000089f8,s_spi_phy_v5_c_00008378,0x33a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8418: uVar1 = FUN_000006ec(s_SPI_TIME_OUT__00008a20);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8428: uVar2 = FUN_000006ec(s_SPI_TIME_OUT__00008a20);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8464: FUN_000006e8(s__num_<__(_(SPI_MAX_RECEIVE_BYTE)_00008a70,DAT_00008a30,0x798,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8668: FUN_000006e4(s_s_spi_irq_ctx_spi_rw_remain_size_000090b8,DAT_00008a30,0x2ad);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8745: uVar2 = FUN_000007a4(s_SPI_RX_TIMER_000090f0,DAT_000089f4,0,1,0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8944: FUN_000006e8(s__dma_len_<__(SPI_MAX_RECEIVE_BYT_00009698,DAT_00008a30,0x527,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9129: FUN_000006e4(s_s_spi_irq_ctx_spi_rw_remain_size_0000a2b0,DAT_00009cc0,0x80e);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9278: FUN_000006e4(s_s_spi_irq_ctx_spi_rw_remain_size_0000a2b0 + 0x24,DAT_00009cc0,0x88b);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9462: FUN_000006e4(s_pin_addr_0000a614,DAT_00009cc0,0x9f4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9494: FUN_000006e4(s_gpio_id____INVALID_U32_0000a620,DAT_00009cc0,0xa0f);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9544: iVar2 = FUN_000007e0(s_SPI_SYNC_MUTEX_0000a884,1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9548: uVar3 = FUN_000006ec(s_SPI_Great_MUTEX_fail__0000a898);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9549: FUN_000006e8(s__NULL______spi_bus_bus_id__mutex_0000a8bc,s_spi_hal_c_0000a8b0,0x86,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9578: FUN_000006e4(s_NULL____dev_0000a8e4,s_spi_hal_c_0000a8b0,0xd4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9582: FUN_000006e4(s_SPI_ID_MAX_>_dev_>id_0000a8f0,s_spi_hal_c_0000a8b0,0xd8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9618: FUN_000006e4(s_SPI_ID_MAX_>_logic_id_0000a908,s_spi_hal_c_0000a8b0,0x11a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9655: FUN_000006e4(s_SPI_ID_MAX_>_logic_id_0000a908,s_spi_hal_c_0000a8b0,0x18c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9658: FUN_000006e4(s_NULL____buffer_ptr_0000acf8,s_spi_hal_c_0000a8b0,0x18d);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9661: FUN_000006e4(s_0_<_len_0000ad0c,s_spi_hal_c_0000a8b0,0x18e);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9664: FUN_000006e4(s_0______spi_dev_logic_id__freq_0000ad14,s_spi_hal_c_0000a8b0,400);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9719: FUN_000006e4(s_SPI_ID_MAX_>_logic_id_0000a908,s_spi_hal_c_0000a8b0,0x1ec);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9722: FUN_000006e4(s_NULL____arg_0000ad34,s_spi_hal_c_0000a8b0,0x1ed);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9792: FUN_000006e4(s_ret____SCI_SUCCESS_0000ad40,s_spi_hal_c_0000a8b0,0x218);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9930: FUN_000006e4(s_0______spi_dev_logic_id__freq_0000ad14,DAT_0000b1f8,0x2e3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9937: FUN_000006e4(s_PNULL____spi_rx_callback_0000b234,DAT_0000b1f8,0x2ea);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:10153: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:10208: FUN_000006c8(s____SPI_HAL_Open____SUCCESS__0000bd49 + 3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:10218: FUN_000006e4(s__lcm_spec_info_t_cs_pin_____lcm__0000bd78,s_lcd_if_spi_c_0000bd68,0x172);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:10223: FUN_000006c8(s____SPI_HAL_Open____SUCCESS__0000bd49 + 3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12159: uVar2 = FUN_000006ec(s_src_y_address_is_null_0000e648);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12160: FUN_000006e8(s_layer_ptr_>src_base_addr_y_addr_0000e66c,s_lcdc_app_c_0000e660,0x13b,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12163: uVar2 = FUN_000006ec(s_y_address_is_not_word_aligned_0000e68c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12164: FUN_000006e8(s_0_____layer_ptr_>src_base_addr_y_0000e6ac,s_lcdc_app_c_0000e660,0x13d,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12169: uVar2 = FUN_000006ec(s_src_y_address_is_null_0000e648);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12170: FUN_000006e8(s_layer_ptr_>src_base_addr_uv_addr_0000e704,s_lcdc_app_c_0000e660,0x141,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12173: uVar2 = FUN_000006ec(s_u_address_is_not_word_aligned_0000e728);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12174: FUN_000006e8(s_0_____layer_ptr_>src_base_addr_u_0000e748,s_lcdc_app_c_0000e660,0x143,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12182: uVar2 = FUN_000006ec(s_LCDC_img_data_format_err_format__0000e6dc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12183: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x14d,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12198: uVar2 = FUN_000006ec(s_LCDC_img_src_size_not_algin_data_0000eb2c,*(undefined4 *)(puVar1 + 0xc),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12200: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x155,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12223: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x164,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12233: uVar2 = FUN_000006ec(s_LCDC_img_postion_not_algin_data__0000eb70,*(undefined4 *)(puVar1 + 0xc),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12235: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x16b,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12240: uVar2 = FUN_000006ec(s_LCDC_img_size_err_x__d__y__d__w__0000eba8,puVar1[6],puVar1[7],puVar1[4],
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12242: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x173,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12286: uVar4 = FUN_000006ec(s_LCDC_osd1_data_format_err_format_0000ebd8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12287: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,400,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12302: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x199,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12327: FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x1a9,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12337: uVar4 = FUN_000006ec(s_LCDC_osd1_postion_not_algin_data_0000ec04,puVar3[4],
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12344: uVar4 = FUN_000006ec(s_LCDC_osd1_size_err_x__d__y__d__w_0000ec40,(uint)(ushort)puVar3[-1],
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12350: uVar4 = FUN_000006ec(s_src_base_addr_is_not_word_aligne_0000ec6c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12363: uVar4 = FUN_000006ec(s_alpha_base_address_is_invalid_0000eca0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12364: FUN_000006e8(s_layer_ptr_>alpha_base_addr_0000ecc0,DAT_0000ec3c,0x1c2,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12367: uVar4 = FUN_000006ec(s_alpha_base_address_is_not_word_a_0000ee94);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12368: FUN_000006e8(s_LCDC_ZERO_____layer_ptr_>alpha_b_0000eec8,DAT_0000ec3c,0x1c4,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12405: uVar4 = FUN_000006ec(s_LCDC_cap_data_format_err_format__0000ef08);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12450: uVar4 = FUN_000006ec(s_LCDC_capture_rect_error__x__d__y_0000ef34,(uint)*puVar3,puVar3[1],puVar3[2]
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12455: uVar4 = FUN_000006ec(s_dst_base_addr_is_not_word_aligne_0000ef70);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12913: uVar1 = FUN_000006ec(s_LCDC_AppSetFmark_lcd_id_is_error_0000f9d8,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12990: uVar1 = FUN_000006ec(s_LCDC_AppUnRegisterIntFunc__The_i_0000fd0c,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13016: FUN_000006e4(s_PNULL____param_ptr_0000fd54,s_lcdc_app_c_0000fd48,0x457);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13042: FUN_000006e4(s_PNULL____param_ptr_0000fd54,s_lcdc_app_c_0000fd48,0x488);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13092: FUN_000006e8(s_param_ptr_>cap_rect_w____param_p_0000fd70,s_lcdc_app_c_0000fd48,0x513,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13096: FUN_000006e8(s_param_ptr_>cap_rect_h____param_p_0000fda8,s_lcdc_app_c_0000fd48,0x518,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13159: uVar1 = FUN_000006ec(s_LCDC_AppSetCSPin_lcd_id_is_error_00010068);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13160: FUN_000006e8(DAT_0001008c,s_lcdc_app_c_0000fd48,0x573,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13333: FUN_000006c8(s__LCDC_GetColorKey__expand_mode_i_00010324);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13420: uVar4 = FUN_000006ec(s_LCDC_lcdc_logic_size_err_width___00010350,*(undefined2 *)(iVar2 + 0x40),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13442: uVar4 = FUN_000006ec(s_LCDC_trim_rect_error__x___d__y___0001040c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13970: FUN_000006e4(s_ANA_INVALID_VALUE_____uint32_ana_00010ebc,s_analog_phy_c_00010eac,0xbe);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14009: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14061: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14087: uVar1 = FUN_000006ec(s__s___d__gpio__d_exceed_max__00011624,s_gpio_phy_c_00011618,0x19,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14088: FUN_000006e8(s_SCI_FALSE_00011640,s_gpio_phy_c_00011618,0x19,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14590: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14648: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14663: FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x139,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14688: FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x14d,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14723: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14736: FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x481,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14747: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14764: FUN_000006c8(s_LCDC___0x20800110____0x_08X_000120a7 + 1,_DAT_20800110);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14765: FUN_000006c8(s_LCDC___0x20800114____0x_08X_000120c8,_DAT_20800114);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14766: FUN_000006c8(s_LCDC___0x20800118____0x_08X_000120e8,_DAT_20800118);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14767: FUN_000006c8(s_LCDC___0x2080011c____0x_08X_00012108,_DAT_2080011c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14781: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14825: FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x110,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14851: FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x124,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14882: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14906: uVar3 = FUN_000006ec(s_Register_Interrupt_of_the_LCDC_f_000123dc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14907: FUN_000006e8(&DAT_00012404,s_lcdc_drv_ums9117_c_00011e20,0x180,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14921: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14936: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14971: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15554: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15681: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15694: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15811: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15839: FUN_000006c8(s___LCDC_IRQ_type_is_wrong__irq_ty_00012ef6 + 2,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15861: FUN_000006c8(s_LCDC_IRQ_num_is_wrong__irq_numbe_00012f20,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:16324: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:23078: FUN_00025740(s_s_spi_irq_ctx_spi_rw_remain_size_000090b8 + 0x15);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:5: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:20: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:316: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:549: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:614: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:1102: FUN_006faeac(s_ThreadInfo_Offset_0x_08X__Length_00001b88,iVar2,0x4000);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:1128: FUN_006faeac(s_CM4_IARM__Offset_0x_08X__Length__00001be4,iVar3,iVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:1145: FUN_006faeac(s_________________Dump_LogSave_Arm_000016f0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:1149: FUN_006faeac(s_no_logsave_armlog_000017a4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:2093: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:2115: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:5977: FUN_006f9124(auStack_38,s__armlog_04d_Logel_0000c514,param_2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:6121: uVar3 = FUN_006f9124(auStack_114,s_E__armlog_04d_Logel_0000c614,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:6351: uVar4 = FUN_006f9124(auStack_110,s_E__armlog_04d_Logel_0000c614,*(undefined2 *)(iVar2 + 4));
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:8564: local_30 = (code *)(s_________________Dump_LogSave_Arm_000016f0 + 0x1a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:9415: pcVar1 = s_no_logsave_armlog_000017a4 + *piVar50;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:9521: pcVar1 = s_no_logsave_armlog_000017a4 + *piVar51;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:9680: pcVar1 = s_no_logsave_armlog_000017a4 + *piVar19;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:9686: *(undefined2 **)(s_no_logsave_armlog_000017a4 + *piVar19) = puVar54;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:18839: pcVar33 = s_no_logsave_armlog_000017a4 + *piVar18;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:19489: FUN_00352a16(*piVar18,0x3ae,*(undefined4 *)(s_no_logsave_armlog_000017a4 + *piVar20));
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:19491: pcVar33 = s_no_logsave_armlog_000017a4 + *piVar20;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:21602: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:22324: FUN_003af414(s_ThreadInfo_Offset_0x_08X__Length_00001b88 + iVar3 + 4,0,0x160);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:23282: FUN_006f2c00(0,DAT_009ce2fc + 0x20,s_ThreadInfo_Offset_0x_08X__Length_00001b88 + 8,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:23294: s_ThreadInfo_Offset_0x_08X__Length_00001b88 + 0x17);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:23299: FUN_006f2c00(0,DAT_009ce308 + -0x4d8,s_ThreadInfo_Offset_0x_08X__Length_00001b88 + 0x1b,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:28506: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:28871: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:29081: FUN_0003beb0(s_ADDR__0x_08x__LEN__0x_08x_00032be8,iStack_1c,local_20);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:31982: FUN_006fdf4a(s_sprd_ANA_CHGR_STATUS_is__x_000396dc,iVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:33064: FUN_006fb8b0(s_ANA_INVALID_VALUE_____uint32_ana_0003cdfc,s_analog_phy_c_0003cdec,0xbe);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:33365: FUN_006fdf4a(s_sprd_jz_cal_capacity_input_ocv_i_0003dfdc,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34552: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34565: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34765: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34780: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34844: uVar2 = FUN_006fd49c(s_logicNum__d_0003f4ac,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34845: thunk_FUN_006fb59e(s__i_<_MAX_ISR_NUM)_0003f4c8,s_gic_phy_c_0003f4bc,0x2ea,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34873: uVar2 = FUN_006fd49c(s_logicNum__d_0003f4ac,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34874: thunk_FUN_006fb59e(s__i_<_MAX_ISR_NUM)_0003f4c8,s_gic_phy_c_0003f4bc,0x304,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34949: FUN_006fdf4a(s_LCDC_IRQ_num_is_wrong__irq_numbe_0003f580);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34954: thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34976: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34998: thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34999: s_lcdc_drv_ums9117_c_0003f5dc,0x481,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35009: FUN_006fdf4a(s_LCDC___0x20800110____0x_08X_0003fa17 + 1,_DAT_20800110);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35010: FUN_006fdf4a(s_LCDC___0x20800114____0x_08X_0003fa38,_DAT_20800114);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35011: FUN_006fdf4a(s_LCDC___0x20800118____0x_08X_0003fa58,_DAT_20800118);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35012: FUN_006fdf4a(s_LCDC___0x2080011c____0x_08X_0003fa78,_DAT_2080011c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35020: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35040: thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35062: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35075: thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35087: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35103: thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35134: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35158: uVar3 = FUN_006fd49c(s_Register_Interrupt_of_the_LCDC_f_0003faf8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35159: thunk_FUN_006fb59e(&DAT_0003fb20,s_lcdc_drv_ums9117_c_0003f5dc,0x180,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35173: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35188: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35223: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35785: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35980: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35993: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36110: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36144: FUN_006fdf4a(s_LCDC_IRQ_type_is_wrong__irq_type_0004032b + 1,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36159: uVar1 = FUN_006fd49c(s__s___d__gpio__d_exceed_max__00040604,s_gpio_phy_c_000405f8,0x19,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36160: thunk_FUN_006fb59e(s_SCI_FALSE_00040620,s_gpio_phy_c_000405f8,0x19,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36372: FUN_006fb8b0(s_gpio_num_<_GPIO_TOTAL_CNT_00040ac4,s_gpio_ext_drv_c_00040a6c,0x267);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36496: uVar2 = FUN_006f7f62(s_GPIO_EXT_INT_DESHAKING_00040ef0,0x4088b,*(int *)(DAT_00040eec + 0xc),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36550: FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x2ac);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36600: FUN_006fb8b0(&DAT_00040f0c,s_gpio_ext_drv_c_00040a6c,0x2a9);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36638: FUN_006fb8b0(s__ic_<_GPIO_EXT_DEV_MAX_CNT)_&&_(_00040f2c,s_gpio_ext_drv_c_00040a6c,0x31a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36641: FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x31b);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36705: FUN_006fb8b0(s__ic_<_GPIO_EXT_DEV_MAX_CNT)_&&_(_00040f2c,s_gpio_ext_drv_c_00040a6c,0x36b,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36710: FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x36f);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36715: FUN_006fb8b0(s___s_GPIO_EXT_tab_gpio_index__dir_00040f68,s_gpio_ext_drv_c_00040a6c,0x374);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36757: FUN_006fb8b0(&DAT_00040f0c,s_gpio_ext_drv_c_00040a6c,0x409);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36760: FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x40c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37590: FUN_006fdf4a(s__sprd_codec_ap_hp_buf_en_close_b_000437d8,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37740: FUN_006fdf4a(s_start_charge_ANA_STS0____x_time__00043c0c,uVar1,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37741: FUN_006fdf4a(s__sprd_codec_ap_fast_charge_Start_00043c30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37786: FUN_006fdf4a(s_start_dc_cal_ANA_STS2____x_time__00043c74,uVar2,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37793: FUN_006fdf4a(s_1st_ANA_STS2____x_00043c98,iVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37797: FUN_006fdf4a(s_2nd_ANA_STS2____x_00043cac,iVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37811: FUN_006fdf4a(s_end_dc_cal_ANA_STS2____x_time_d__00043cf8,uVar2,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37818: FUN_006fdf4a(s__sprd_codec_ap_dc_calibration_DC_00043d1c,(0x14 - iVar5) * 0xf + iVar4,iVar5);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37820: FUN_006fdf4a(s___sprd_codec_ap_dc_calibration_d_00043d5c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37844: FUN_006fdf4a(s_ANA_STS2____x_time_d__00043d84,iVar2,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37847: FUN_006fdf4a(s__sprd_codec_ap_depop_charg_Check_00043d9c,iVar5);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37867: FUN_006fdf4a(s_Check_charging_status__ANA_STS2__00043e10,iVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37880: FUN_006fdf4a(s_end_depop_charge_ANA_STS2____x_t_00043e8c,uVar3,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37930: FUN_006fdf4a(s__sprd_codec_ap_hp_depop_start__d_00043eb8,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:37958: FUN_006fdf4a(s___sprd_codec_ap_hp_depop_en__d_000445e0,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:38016: uVar2 = FUN_006f5f72(s_SPRD_CODEC_TASK_00046104,s_Q_SPRD_CODEC_TASK_000460f0,DAT_000460ec,0,0,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42214: FUN_006fb8b0(s_id_<_GPIO_PROD_ID_MAX_0004db64,s_gpio_prod_c_0004db58,0x8c8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42520: FUN_006fb8b0(s_PNULL____cfg_info_ptr_0004e0cc,s_gpio_prod_c_0004db58,0x8ee);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42523: FUN_006fb8b0(s_cfg_info_ptr_>gpio_id_<_GPIO_PRO_0004e0e4,s_gpio_prod_c_0004db58,0x8ef);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42529: FUN_006fe074(0x10,iVar3,s_headset__GPIO_SentHeadsetIsConne_0004db98 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42551: FUN_006fdf4a(s_zgt_GPIO_HeadsetRecogPowerOn_0004e114);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42611: FUN_006fe074(0x10,DAT_0004e110 + -3,s_GPIO_HeadsetButtonIntHandler_gpi_0004e070 + 0x38);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42628: FUN_006fe074(0x10,DAT_0004e110 + -2,s_headset__GPIO_SentHeadsetIsConne_0004db98 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42632: FUN_006fdf4a(s_GPIO_PROD_RegGpio_EICA_DBNC_num__0004e134,*(undefined2 *)(iVar3 + 10),uVar5);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42705: FUN_006fe074(0x10,DAT_0004e110 + -1,s_GPIO_HeadsetButtonIntHandler_gpi_0004e070 + 0x38);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42728: uVar7 = FUN_006fd49c(s_GPIO_full_table__d_line_has_been_0004e454);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42729: thunk_FUN_006fb59e(&DAT_0004e480,s_gpio_prod_c_0004db58,0x8ab,uVar7);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42732: uVar7 = FUN_006fd49c(s_GPIO_cus_cfg_table_has_not_end_f_0004e484);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42733: thunk_FUN_006fb59e(&DAT_0004e480,s_gpio_prod_c_0004db58,0x8b0,uVar7);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42767: FUN_006fb8b0(s_PNULL____cus_gpio_tab_00040a7c,s_gpio_ext_drv_c_00040a6c,0x141);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42775: FUN_006fb8b0(s_GPIO_TOTAL_CNT_>_index_00040a94,s_gpio_ext_drv_c_00040a6c,0x147);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42806: FUN_006fb8b0(s_PNULL____cus_dev_tab_00040aac,s_gpio_ext_drv_c_00040a6c,0x16a);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42918: FUN_006fdf4a(s_GPIO_GetTCXO_DCXO_Status______d__0004e4d4,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42954: uVar6 = FUN_006fd49c(s_LCDC_lcdc_logic_size_err_width___0004e8f8,*(undefined2 *)(iVar4 + 0x140),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42956: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x10c,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42969: uVar6 = FUN_006fd49c(s_LCDC_osd1_data_format_err_format_0004e938);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42970: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,400,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42977: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x199,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43000: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1a9,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43004: uVar6 = FUN_006fd49c(s_LCDC_osd1_postion_not_algin_data_0004e964,puVar7[4],
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43006: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1b0,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43011: uVar6 = FUN_006fd49c(s_LCDC_osd1_size_err_x__d__y__d__w_0004e99c,(uint)(ushort)puVar7[-1],
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43014: uVar9 = thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1b6,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43017: uVar6 = FUN_006fd49c(s_src_base_addr_is_not_word_aligne_0004e9c8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43018: uVar9 = thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1bc,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43030: uVar6 = FUN_006fd49c(s_alpha_base_address_is_invalid_0004e9fc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43031: thunk_FUN_006fb59e(s_layer_ptr_>alpha_base_addr_0004ea1c,s_lcdc_app_c_0004e928,0x1c2,uVar6
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43035: uVar6 = FUN_006fd49c(s_alpha_base_address_is_not_word_a_0004ea38);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43036: thunk_FUN_006fb59e(s_LCDC_ZERO_____layer_ptr_>alpha_b_0004ea6c,s_lcdc_app_c_0004e928,0x1c4
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43048: uVar6 = FUN_006fd49c(s_LCDC_cap_data_format_err_format__0004eaa8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43049: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1de,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43072: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1ec,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43078: uVar6 = FUN_006fd49c(s_LCDC_capture_rect_error__x__d__y_0004ead0,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43081: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1f5,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43084: uVar6 = FUN_006fd49c(s_dst_base_addr_is_not_word_aligne_0004eb0c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43085: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1fb,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43099: uVar6 = FUN_006fd49c(s_LCDC_trim_rect_error__x___d__y___0004eb40,*(undefined2 *)(iVar4 + 0x154),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43101: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x124,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43116: uVar1 = FUN_006fd49c(s_LCDC_AppSetFmark_lcd_id_is_error_0004eb74,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43117: thunk_FUN_006fb59e(s__lcd_id_<_2)_0004eb9c,s_lcdc_app_c_0004e928,0x545,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43192: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x421,uVar3);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43351: FUN_006fdf4a(s__LCDC_GetColorKey__expand_mode_i_0004f02c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43410: FUN_006fe074(0x10,DAT_0004f058,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43429: FUN_006fe074(0x10,DAT_0004f490,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43491: FUN_006fb8b0(s_PNULL____param_ptr_0004f498,s_lcdc_app_c_0004e928,0x457);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43529: FUN_006fb8b0(s_PNULL____param_ptr_0004f498,s_lcdc_app_c_0004e928,0x488);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43571: FUN_006fe074(0x10,DAT_0004f4ac,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43640: thunk_FUN_006fb59e(s_param_ptr_>cap_rect_w____param_p_0004f4b4,s_lcdc_app_c_0004e928,0x513,uVar2
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43645: thunk_FUN_006fb59e(s_param_ptr_>cap_rect_h____param_p_0004f4ec,s_lcdc_app_c_0004e928,0x518,uVar2
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43715: uVar1 = FUN_006fd49c(s_LCDC_AppSetCSPin_lcd_id_is_error_0004f524);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43716: thunk_FUN_006fb59e(s__lcd_id_<_2)_0004eb9c,s_lcdc_app_c_0004e928,0x573,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43955: FUN_006fe074(0x10,DAT_0004f978,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43991: FUN_006fe074(0x10,DAT_0004f97c,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44024: uVar2 = FUN_006fd49c(s_src_y_address_is_null_0004f984);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44025: thunk_FUN_006fb59e(s_layer_ptr_>src_base_addr_y_addr_0004f99c,s_lcdc_app_c_0004e928,0x13b,uVar2)
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44029: uVar2 = FUN_006fd49c(s_y_address_is_not_word_aligned_0004f9bc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44030: thunk_FUN_006fb59e(s_0_____layer_ptr_>src_base_addr_y_0004f9dc,s_lcdc_app_c_0004e928,0x13d,uVar2
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44036: uVar2 = FUN_006fd49c(s_src_y_address_is_null_0004f984);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44037: thunk_FUN_006fb59e(s_layer_ptr_>src_base_addr_uv_addr_0004fa30,s_lcdc_app_c_0004e928,0x141,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44041: uVar2 = FUN_006fd49c(s_u_address_is_not_word_aligned_0004fa54);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44042: thunk_FUN_006fb59e(s_0_____layer_ptr_>src_base_addr_u_0004fa74,s_lcdc_app_c_0004e928,0x143,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44051: uVar2 = FUN_006fd49c(s_LCDC_img_data_format_err_format__0004fa0c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44052: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x14d,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44067: uVar2 = FUN_006fd49c(s_LCDC_img_src_size_not_algin_data_0004faa4,*(undefined4 *)(puVar1 + 0xc),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44069: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x155,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44089: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x164,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44092: uVar2 = FUN_006fd49c(s_LCDC_img_postion_not_algin_data__0004fae8,*(undefined4 *)(puVar1 + 0xc),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44094: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x16b,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44099: uVar2 = FUN_006fd49c(s_LCDC_img_size_err_x__d__y__d__w__0004fb20,puVar1[6],puVar1[7],puVar1[4],
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44101: thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x173,uVar2);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44495: FUN_006fdf4a(s___sprd_codec_headset_micbias_en___00050738,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44510: FUN_006fdf4a(s___sprd_codec_headset_type_detect_00050784,uVar1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44525: FUN_006fdf4a(s___sprd_codec_headset_related_ope_000507ac,*DAT_000507a8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44584: FUN_006fdf4a(s___sprd_codec_headset_set_connect_000507dc,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:44585: FUN_006fdf4a(s___sprd_codec_set_headset_connect_001e8768,0x2d5,param_1,extraout_r3,unaff_r4,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:45164: FUN_006fdf4a(s_hch_SPRD_IMG_Scaling_cus_error_0005103c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:46691: thunk_FUN_006fb59e(s_FREQ_PHY_DetectClkValidity__arm__00055958,s_freq_phy_c_0005588c,0xe0,uVar2)
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:46724: thunk_FUN_006fb59e(s_FREQ_PHY_DetectClkValidity__arm__00055958,s_freq_phy_c_0005588c,0xf8,uVar2)
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:46788: FUN_006fb8b0(s_SPI_ID_MAX_>_logic_id_00055d3c,s_spi_hal_c_00055d30,0x1ec);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:46791: FUN_006fb8b0(s_NULL____arg_00055d54,s_spi_hal_c_00055d30,0x1ed);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:46862: FUN_006fb8b0(s_ret____SCI_SUCCESS_00055d68,s_spi_hal_c_00055d30,0x218);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:46960: FUN_006fb8b0(s_ret____SCI_SUCCESS_00055d68,s_spi_hal_c_00055d30,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:49665: cVar3 = FUN_006f9124(auStack_98,s_E__Logsave_armlog__4d__2d__2d__2_00059478,local_52,
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:50021: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:50241: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:50393: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:54446: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:54617: pcVar5 = s__JPEG_DecodeFrame__alloc_rgb_sli_00060cc0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:54620: FUN_006fdf4a(s__JPEG_DecodeFrame__rgb_slice_buf_00060be4,iVar9,param_1[0xae]);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:54768: pcVar8 = s__JPEG_Decode_Res__JPEG_YUV2RGBCo_00061200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:55338: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:58199: FUN_006fdf4a(s_hch_JPG_DecodeToRGB_read_lines___00064c44);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:58239: FUN_006fdf4a(s_JPG_DecodeToRGB___read_lines_____00064790);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:61462: FUN_006fb8b0(s_0____g_data_buffer_arr_arm_log_b_00067d38,s_logsave_buffer_c_00067d24,0x4c)
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:61474: FUN_006fdf4a(s_logsave__arm_buffer_addr_0x_x_00067d68,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:61509: FUN_006fdf4a(s_logsave__arm_buffer_addr_0x_x_00067d68,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:61548: FUN_006fdf4a(s_logsave__iq_buffer_addr_0x_x_00067df4,uVar6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:63289: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:67019: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:70670: uVar1 = FUN_006fd49c(s__YUV2RGB__dst_buf_is_NULL_00073edc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:70704: uVar1 = FUN_006fd49c(s__YUV2ARGB__dst_buf_is_NULL_00073f24);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71119: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71547: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71643: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71685: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71706: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71870: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71908: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:71933: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:72070: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:75561: FUN_006fb8b0(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_0007a1b8,s_sio_c_0007a1ac,0x489);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:75586: FUN_006fb8b0(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_0007a1b8,s_sio_c_0007a1ac,0x4c6);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:75749: FUN_006fb8b0(s_start_addr_0007aaf0,s_sio_c_0007a1ac,0x675);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:75760: FUN_006fb8b0(s_0xFFFFFFFF____uart_base_addr_0007ab20,s_sio_c_0007a1ac,0x67b);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:75896: FUN_006fb8b0(s_0xFFFFFFFF____uart_base_addr_0007ab20 + 0x18,s_sio_c_0007a1ac,0xb0e);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:75975: FUN_006fb8b0(s_port_<_MAX_LOGICAL_SIO_PORT_NUM_0007a1b8,s_sio_c_0007a1ac,0x83d);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:77463: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:77474: FUN_006fdf4a(s_ISP_SERVICE_ISP_ServiceStartVTEx_0007cbf0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:77491: FUN_006fdf4a(s_ISP_SERVICE_ISP_ServiceStartVTEx_0007cc1f + 1,*(undefined1 *)(puVar1 + 1));
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:78105: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:78174: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:79334: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:79362: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:79392: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:79425: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:80139: /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:86571: FUN_006fdf4a(s__ISP_ServiceDisplayOneFrame_end_t_0008eaa0,uVar4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:86579: s_MS_Ref_source_isp_service_UMS911_0008ea20);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:86625: puVar3 = (ushort *)FUN_006f9a74(0x1c,s_isp_service_c_0008eb00,0x9a2);

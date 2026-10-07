@@ -1,0 +1,1768 @@
+﻿
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3243
+  
+  iVar2 = FUN_000023ca();
+  FUN_00001e28(s_boot0_UART_JTAG_mode____d_00002514,iVar2);
+  iVar1 = DAT_00002530;
+  if (iVar2 != 2) {
+    *(uint *)(DAT_00002530 + 0x18) = *(uint *)(DAT_00002530 + 0x18) | 0x40000000;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5012
+        }
+        else {
+          pcVar3 = s_dmc_lpddr3_rde_training_neg_fail_0000463c;
+        }
+      }
+      else {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5016
+      }
+      else {
+        pcVar3 = s_dmc_lpddr3_rde_training_pos_fail_00004614;
+      }
+    }
+    else {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5020
+    }
+    else {
+      pcVar3 = s_dmc_lpddr3_wde_training_Failed_000045f0;
+    }
+    FUN_000034f8(pcVar3);
+    uVar2 = 0xffffffff;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:6260
+
+{
+  software_interrupt(0xab);
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:9817
+
+{
+  software_interrupt(0xab);
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2810
+        }
+        else {
+          pcVar3 = s_dmc_lpddr3_rde_training_neg_fail_0000410c;
+        }
+      }
+      else {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2814
+      }
+      else {
+        pcVar3 = s_dmc_lpddr3_rde_training_pos_fail_000040e4;
+      }
+    }
+    else {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl1.c:2818
+    }
+    else {
+      pcVar3 = s_dmc_lpddr3_wde_training_Failed_000040c0;
+    }
+    FUN_00002fc8(pcVar3);
+    uVar2 = 0xffffffff;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3340
+  *(int *)(DAT_000037ec + 0x18) = iVar2;
+  if (iVar2 == 0) {
+    pcVar3 = s_fdl2_NANDCTL_Open_failed__000037f0;
+  }
+  else {
+    FUN_00000844(iVar2);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:3346
+    iVar2 = FUN_00000c48(*(undefined4 *)(iVar4 + 0x18),&local_28);
+    if (iVar2 != 0) {
+      FUN_00005c74(s_fdl2_NANDCTL_ReadID_failed__0000380c);
+      FUN_0000344c(*(undefined4 *)(iVar4 + 0x18));
+      return 1;
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:7207
+    FUN_0000a864(puVar9);
+    piVar1[4] = 0;
+    FUN_00005c74(s_usb_crc_error_0000aaf8);
+    FUN_0000a91a(s_SEND_ERROR_RSP_0x_x__func__s__li_0000ab0c,0x8b,DAT_0000ab08,0x82);
+    FUN_0000a8f2(0x8b);
+    do {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\fdl2.c:12972
+
+{
+  software_interrupt(0xab);
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2544
+  
+  iVar2 = FUN_00001e3c();
+  FUN_000009f8(s_boot0_UART_JTAG_mode____d_00002034,iVar2);
+  iVar1 = DAT_00002050;
+  if (iVar2 == 2) {
+    return;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2773
+    case 0xb:
+LAB_00002370:
+      pcVar3 = s_vddusb_000024cc;
+      break;
+    case 0xc:
+      return 0xf;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2781
+    case 0xe:
+LAB_00002338:
+      pcVar3 = s_vddsdio_0000248c;
+      break;
+    case 0xf:
+LAB_00002360:
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:2848
+    case 0x24:
+LAB_00002380:
+      pcVar3 = s_vddemmccore_000024e0;
+      break;
+    default:
+      goto switchD_00002254_default;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3559
+{
+  FUN_00003044();
+  FUN_000006e4(&DAT_000034c0,s_watchdog_hal_c_00003480,0x58);
+  return;
+}
+
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3587
+  iVar1 = FUN_00002f18(&local_18);
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0x6e);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0x6e,uVar2);
+  }
+  return CONCAT44(local_14,local_18);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3588
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0x6e);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0x6e,uVar2);
+  }
+  return CONCAT44(local_14,local_18);
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3618
+  iVar1 = FUN_00002f18(&local_18);
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0x85);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0x85,uVar2);
+  }
+  return CONCAT44(local_14,local_18);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3619
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0x85);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0x85,uVar2);
+  }
+  return CONCAT44(local_14,local_18);
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3649
+  iVar1 = FUN_00002f18(&local_18);
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0x9c);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0x9c,uVar2);
+  }
+  return CONCAT44(local_14,local_18);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3650
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0x9c);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0x9c,uVar2);
+  }
+  return CONCAT44(local_14,local_18);
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3683
+  iVar1 = FUN_00002f18(&local_18);
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0xb6);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0xb6,uVar2);
+  }
+  FUN_00000664(uVar3 + 0x32);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:3684
+  if (iVar1 != 0) {
+    uVar2 = FUN_000006ec(s__s___d__WDG_Config___d_00003490,s_watchdog_hal_c_00003480,0xb6);
+    FUN_000006e8(s__WDG_RESULT_OK____ret__000034a8,s_watchdog_hal_c_00003480,0xb6,uVar2);
+  }
+  FUN_00000664(uVar3 + 0x32);
+  do {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8075
+          uVar6 = FUN_000006ec(s_ctl0_0x_x_ctl1_0x_x_ctl4_0x_x_st_00008344,puVar9[2],puVar9[3],
+                               puVar9[6],puVar9[0xc],puVar9[0xd]);
+          uVar7 = FUN_000006e8(&DAT_00008388,s_spi_phy_v5_c_00008378,0x111,uVar6);
+        }
+        iVar4 = DAT_0000838c;
+        if (param_4 != 1) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8129
+      else {
+LAB_00008158:
+        uVar7 = FUN_000006e4(&DAT_00008388,s_spi_phy_v5_c_00008378);
+      }
+    }
+    if (uVar5 == 8) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8211
+          uVar4 = FUN_000006ec(s_ctl0_0x_x_ctl1_0x_x_ctl4_0x_x_st_00008344,puVar8[2],puVar8[3],
+                               puVar8[6],puVar8[0xc],puVar8[0xd]);
+          pcVar5 = (code *)FUN_000006e8(&DAT_00008388,s_spi_phy_v5_c_00008378,0x1a6,uVar4);
+        }
+        pcVar2 = DAT_0000838c;
+        if (param_4 != 1) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8263
+      else {
+LAB_00008438:
+        pcVar5 = (code *)FUN_000006e4(&DAT_00008388,s_spi_phy_v5_c_00008378);
+      }
+    }
+    if (pcVar3 == SupervisorCall) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:8375
+  iVar1 = (uVar3 >> 3) * 0x10;
+  if (piVar2[1] == 0) {
+    FUN_000006e4(s_s_spi_irq_ctx_spi_rw_remain_size_000089f8,s_spi_phy_v5_c_00008378,0x33a);
+  }
+  FUN_00008390(*piVar2,piVar2[3],iVar1,1);
+  piVar2[3] = piVar2[3] + iVar1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:9494
+  iVar1 = FUN_0000a4a8(param_1);
+  if (iVar1 == -1) {
+    FUN_000006e4(s_gpio_id____INVALID_U32_0000a620,DAT_00009cc0,0xa0f);
+  }
+  if (param_2 == 1) {
+    FUN_000109ac(iVar1);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:10218
+  FUN_0000aab8(uVar4,0x33,local_14);
+  if ((uVar3 & 0xffff) == uVar3 >> 0x10) {
+    FUN_000006e4(s__lcm_spec_info_t_cs_pin_____lcm__0000bd78,s_lcd_if_spi_c_0000bd68,0x172);
+  }
+  local_30 = uVar3 >> 0x10;
+  iVar1 = FUN_0000a6f0(&local_30);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12160
+  if (*(int *)(DAT_0000e644 + 8) == 0) {
+    uVar2 = FUN_000006ec(s_src_y_address_is_null_0000e648);
+    FUN_000006e8(s_layer_ptr_>src_base_addr_y_addr_0000e66c,s_lcdc_app_c_0000e660,0x13b,uVar2);
+  }
+  if ((puVar1[8] & 3) != 0) {
+    uVar2 = FUN_000006ec(s_y_address_is_not_word_aligned_0000e68c);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12164
+  if ((puVar1[8] & 3) != 0) {
+    uVar2 = FUN_000006ec(s_y_address_is_not_word_aligned_0000e68c);
+    FUN_000006e8(s_0_____layer_ptr_>src_base_addr_y_0000e6ac,s_lcdc_app_c_0000e660,0x13d,uVar2);
+  }
+  uVar3 = *(uint *)(puVar1 + 0xc);
+  if (uVar3 < 2) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12170
+    if (*(int *)(puVar1 + 10) == 0) {
+      uVar2 = FUN_000006ec(s_src_y_address_is_null_0000e648);
+      FUN_000006e8(s_layer_ptr_>src_base_addr_uv_addr_0000e704,s_lcdc_app_c_0000e660,0x141,uVar2);
+    }
+    if ((puVar1[10] & 3) != 0) {
+      uVar2 = FUN_000006ec(s_u_address_is_not_word_aligned_0000e728);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12174
+    if ((puVar1[10] & 3) != 0) {
+      uVar2 = FUN_000006ec(s_u_address_is_not_word_aligned_0000e728);
+      FUN_000006e8(s_0_____layer_ptr_>src_base_addr_u_0000e748,s_lcdc_app_c_0000e660,0x143,uVar2);
+    }
+    uVar3 = *(uint *)(puVar1 + 0xc);
+    if (1 < uVar3) goto LAB_0000e564;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12182
+LAB_0000e564:
+    if ((uVar3 != 2 && uVar3 != 3) && ((uVar3 != 4 && uVar3 != 5) && uVar3 != 6)) {
+      uVar2 = FUN_000006ec(s_LCDC_img_data_format_err_format__0000e6dc);
+      FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x14d,uVar2);
+    }
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12183
+    if ((uVar3 != 2 && uVar3 != 3) && ((uVar3 != 4 && uVar3 != 5) && uVar3 != 6)) {
+      uVar2 = FUN_000006ec(s_LCDC_img_data_format_err_format__0000e6dc);
+      FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x14d,uVar2);
+    }
+  }
+  FUN_0000e464(*(undefined4 *)(puVar1 + 0xc),&local_18,&local_14);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12198
+  else {
+LAB_0000e778:
+    uVar2 = FUN_000006ec(s_LCDC_img_src_size_not_algin_data_0000eb2c,*(undefined4 *)(puVar1 + 0xc),
+                         uVar3,puVar1[1]);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x155,uVar2);
+    uVar6 = extraout_r3_00;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12200
+    uVar2 = FUN_000006ec(s_LCDC_img_src_size_not_algin_data_0000eb2c,*(undefined4 *)(puVar1 + 0xc),
+                         uVar3,puVar1[1]);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x155,uVar2);
+    uVar6 = extraout_r3_00;
+  }
+  uVar3 = (uint)puVar1[2];
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12223
+  param_1 = (uint)puVar1[4];
+  uVar2 = FUN_000006ec(DAT_0000eb6c,*(undefined4 *)(puVar1 + 0xc),uVar3,puVar1[3],param_1,param_2);
+  FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x164,uVar2);
+  uVar5 = extraout_r1;
+LAB_0000e828:
+  bVar7 = (puVar1[6] & local_18) == 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12233
+  }
+  if (!bVar7 || (uVar3 & uVar5) != 0) {
+    uVar2 = FUN_000006ec(s_LCDC_img_postion_not_algin_data__0000eb70,*(undefined4 *)(puVar1 + 0xc),
+                         (uint)puVar1[6],puVar1[7],param_1,param_2);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x16b,uVar2);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12235
+    uVar2 = FUN_000006ec(s_LCDC_img_postion_not_algin_data__0000eb70,*(undefined4 *)(puVar1 + 0xc),
+                         (uint)puVar1[6],puVar1[7],param_1,param_2);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x16b,uVar2);
+  }
+  uVar3 = FUN_00012ae8();
+  if ((uVar3 < (uint)puVar1[6] + (uint)puVar1[4]) ||
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12240
+  if ((uVar3 < (uint)puVar1[6] + (uint)puVar1[4]) ||
+     (uVar3 = FUN_00012af0(), uVar3 < (uint)puVar1[7] + (uint)puVar1[5])) {
+    uVar2 = FUN_000006ec(s_LCDC_img_size_err_x__d__y__d__w__0000eba8,puVar1[6],puVar1[7],puVar1[4],
+                         puVar1[5]);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x173,uVar2);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12242
+    uVar2 = FUN_000006ec(s_LCDC_img_size_err_x__d__y__d__w__0000eba8,puVar1[6],puVar1[7],puVar1[4],
+                         puVar1[5]);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x173,uVar2);
+  }
+  return 0;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12286
+  uVar6 = param_1;
+  if ((uVar7 != 3 && uVar7 != 4) && ((uVar7 != 5 && uVar7 != 6) && uVar7 != 7)) {
+    uVar4 = FUN_000006ec(s_LCDC_osd1_data_format_err_format_0000ebd8);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,400,uVar4);
+  }
+  FUN_0000e464(puVar3[4],&local_20,&local_1c);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12287
+  if ((uVar7 != 3 && uVar7 != 4) && ((uVar7 != 5 && uVar7 != 6) && uVar7 != 7)) {
+    uVar4 = FUN_000006ec(s_LCDC_osd1_data_format_err_format_0000ebd8);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,400,uVar4);
+  }
+  FUN_0000e464(puVar3[4],&local_20,&local_1c);
+  uVar9 = (uint)(ushort)puVar3[-4];
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12302
+    uVar4 = FUN_000006ec(DAT_0000ebfc,puVar3[4],uVar9,*(undefined2 *)((int)puVar3 + -0xe),uVar6,
+                         param_2);
+    FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x199,uVar4);
+    uVar10 = extraout_r3_00;
+    uVar7 = extraout_r12_00;
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12327
+  uVar4 = FUN_000006ec(DAT_0000ec00,puVar3[4],uVar5,*(undefined2 *)((int)puVar3 + -10),uVar6,param_2
+                      );
+  FUN_000006e8(&DAT_0000e700,s_lcdc_app_c_0000e660,0x1a9,uVar4);
+  uVar7 = extraout_r1_00;
+LAB_0000ea30:
+  bVar11 = ((ushort)puVar3[-1] & local_20) == 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12337
+  }
+  if (!bVar11 || (uVar5 & uVar7) != 0) {
+    uVar4 = FUN_000006ec(s_LCDC_osd1_postion_not_algin_data_0000ec04,puVar3[4],
+                         (uint)(ushort)puVar3[-1],*(undefined2 *)((int)puVar3 + -2),uVar6,param_2);
+    FUN_000006e8(&DAT_0000e700,DAT_0000ec3c,0x1b0,uVar4);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12344
+     (uVar6 = (uint)*(ushort *)((int)puVar3 + -2) + (uint)*(ushort *)((int)puVar3 + -6),
+     uVar2 < uVar6)) {
+    uVar4 = FUN_000006ec(s_LCDC_osd1_size_err_x__d__y__d__w_0000ec40,(uint)(ushort)puVar3[-1],
+                         *(undefined2 *)((int)puVar3 + -2),(uint)(ushort)puVar3[-2],
+                         *(undefined2 *)((int)puVar3 + -6),param_2);
+    uVar6 = FUN_000006e8(&DAT_0000e700,DAT_0000ec3c,0x1b6,uVar4);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12368
+    if ((puVar3[1] & 3) != 0) {
+      uVar4 = FUN_000006ec(s_alpha_base_address_is_not_word_a_0000ee94);
+      FUN_000006e8(s_LCDC_ZERO_____layer_ptr_>alpha_b_0000eec8,DAT_0000ec3c,0x1c4,uVar4);
+    }
+  }
+  return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12405
+  iVar6 = *(int *)(DAT_0000ef04 + 10);
+  if ((iVar6 != 3 && iVar6 != 4) && iVar6 != 5) {
+    uVar4 = FUN_000006ec(s_LCDC_cap_data_format_err_format__0000ef08);
+    FUN_000006e8(&DAT_0000ef2c,DAT_0000ec3c,0x1de,uVar4);
+  }
+  FUN_0000e464(*(undefined4 *)(puVar3 + 10),&local_18,&local_14);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12450
+    if (bVar10 && uVar1 == uVar2) goto LAB_0000ee60;
+  }
+  uVar4 = FUN_000006ec(s_LCDC_capture_rect_error__x__d__y_0000ef34,(uint)*puVar3,puVar3[1],puVar3[2]
+                       ,puVar3[3],param_2);
+  FUN_000006e8(&DAT_0000ef2c,DAT_0000ec3c,0x1f5,uVar4);
+LAB_0000ee60:
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12913
+  
+  if (1 < param_1) {
+    uVar1 = FUN_000006ec(s_LCDC_AppSetFmark_lcd_id_is_error_0000f9d8,param_1);
+    FUN_000006e8(s__lcd_id_<_2)_0000fa00,DAT_0000ec3c,0x545,uVar1);
+  }
+  iVar2 = DAT_0000f9d0 + param_1 * 4;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:12990
+  
+  if (3 < param_1) {
+    uVar1 = FUN_000006ec(s_LCDC_AppUnRegisterIntFunc__The_i_0000fd0c,param_1);
+    FUN_000006e8(s__uint32__LCD_INT_MAX_>__uint32__i_0000fce4,DAT_0000ec3c,0x4c4,uVar1);
+  }
+  FUN_00011fa4(param_1);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13016
+  case 0:
+    if (param_2 == (ushort *)0x0) {
+      FUN_000006e4(s_PNULL____param_ptr_0000fd54,s_lcdc_app_c_0000fd48,0x457);
+    }
+    FUN_0001f478(iVar2,param_2,0x30);
+    if (*(int *)(iVar2 + 0x28) == 1 || *(int *)(iVar2 + 0x28) == 3) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13042
+  }
+  if (param_2 == (ushort *)0x0) {
+    FUN_000006e4(s_PNULL____param_ptr_0000fd54,s_lcdc_app_c_0000fd48,0x488);
+  }
+  iVar3 = iVar2 + param_1 * 0x40;
+  FUN_0001f478((ushort *)(iVar3 + -0x10),param_2,0x40);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13092
+  if (*(short *)(param_1 + 4) != *(short *)(param_1 + 0x10)) {
+    uVar2 = FUN_000006ec(DAT_0000fd6c);
+    FUN_000006e8(s_param_ptr_>cap_rect_w____param_p_0000fd70,s_lcdc_app_c_0000fd48,0x513,uVar2);
+  }
+  if (*(short *)(param_1 + 6) != *(short *)(param_1 + 0x12)) {
+    uVar2 = FUN_000006ec(DAT_0000fda4);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13096
+  if (*(short *)(param_1 + 6) != *(short *)(param_1 + 0x12)) {
+    uVar2 = FUN_000006ec(DAT_0000fda4);
+    FUN_000006e8(s_param_ptr_>cap_rect_h____param_p_0000fda8,s_lcdc_app_c_0000fd48,0x518,uVar2);
+  }
+  return 0;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13159
+  
+  if (1 < param_1) {
+    uVar1 = FUN_000006ec(s_LCDC_AppSetCSPin_lcd_id_is_error_00010068);
+    FUN_000006e8(DAT_0001008c,s_lcdc_app_c_0000fd48,0x573,uVar1);
+  }
+  *(uint *)(DAT_00010090 + param_1 * 4) = param_2 & 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13160
+  if (1 < param_1) {
+    uVar1 = FUN_000006ec(s_LCDC_AppSetCSPin_lcd_id_is_error_00010068);
+    FUN_000006e8(DAT_0001008c,s_lcdc_app_c_0000fd48,0x573,uVar1);
+  }
+  *(uint *)(DAT_00010090 + param_1 * 4) = param_2 & 1;
+  return;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13333
+    }
+    if (iVar1 != 2) {
+      FUN_000006c8(s__LCDC_GetColorKey__expand_mode_i_00010324);
+      return 0;
+    }
+    uVar2 = (param_2 & 0xffff) >> 0xb;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13420
+  if (((!bVar7 || sVar1 == 0) || (uVar3 = FUN_00012ae8(), uVar3 < *(ushort *)(iVar2 + 0x40))) ||
+     (uVar3 = FUN_00012af0(), uVar3 < *(ushort *)(iVar2 + 0x42))) {
+    uVar4 = FUN_000006ec(s_LCDC_lcdc_logic_size_err_width___00010350,*(undefined2 *)(iVar2 + 0x40),
+                         *(undefined2 *)(iVar2 + 0x42));
+    FUN_000006e8(&DAT_00010384,DAT_00010380,0x10c,uVar4);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:13442
+        ((uint)*(ushort *)(DAT_00010094 + 0x40) < *(ushort *)(DAT_00010094 + 0x54) + uVar3)) ||
+       ((uint)*(ushort *)(DAT_00010094 + 0x42) < *(ushort *)(DAT_00010094 + 0x56) + uVar5)) {
+      uVar4 = FUN_000006ec(s_LCDC_trim_rect_error__x___d__y___0001040c);
+      FUN_000006e8(&DAT_00010384,DAT_00010380,0x124,uVar4,uVar5,unaff_r4);
+    }
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14087
+  
+  if (0x7f < param_1) {
+    uVar1 = FUN_000006ec(s__s___d__gpio__d_exceed_max__00011624,s_gpio_phy_c_00011618,0x19,param_1);
+    FUN_000006e8(s_SCI_FALSE_00011640,s_gpio_phy_c_00011618,0x19,uVar1);
+  }
+  return DAT_0001164c;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14088
+  if (0x7f < param_1) {
+    uVar1 = FUN_000006ec(s__s___d__gpio__d_exceed_max__00011624,s_gpio_phy_c_00011618,0x19,param_1);
+    FUN_000006e8(s_SCI_FALSE_00011640,s_gpio_phy_c_00011618,0x19,uVar1);
+  }
+  return DAT_0001164c;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14662
+  uVar2 = FUN_00012e80();
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x139,
+                 uVar3);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14663
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x139,
+                 uVar3);
+  }
+  uVar2 = 1 << (uVar2 & 0xff);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14687
+  uVar2 = FUN_00012e80();
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x14d,
+                 uVar3);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14688
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x14d,
+                 uVar3);
+  }
+  return (*puVar1 & 1 << (uVar2 & 0xff)) != 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14735
+  uVar2 = FUN_00012e80();
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x481,
+                 uVar3);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14736
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x481,
+                 uVar3);
+  }
+  *puVar1 = *puVar1 | 1 << (uVar2 & 0xff);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14764
+    uVar3 = uVar3 + 1;
+    if (bVar4) {
+      FUN_000006c8(s_LCDC___0x20800110____0x_08X_000120a7 + 1,_DAT_20800110);
+      FUN_000006c8(s_LCDC___0x20800114____0x_08X_000120c8,_DAT_20800114);
+      FUN_000006c8(s_LCDC___0x20800118____0x_08X_000120e8,_DAT_20800118);
+      FUN_000006c8(s_LCDC___0x2080011c____0x_08X_00012108,_DAT_2080011c);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14765
+    if (bVar4) {
+      FUN_000006c8(s_LCDC___0x20800110____0x_08X_000120a7 + 1,_DAT_20800110);
+      FUN_000006c8(s_LCDC___0x20800114____0x_08X_000120c8,_DAT_20800114);
+      FUN_000006c8(s_LCDC___0x20800118____0x_08X_000120e8,_DAT_20800118);
+      FUN_000006c8(s_LCDC___0x2080011c____0x_08X_00012108,_DAT_2080011c);
+      return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14766
+      FUN_000006c8(s_LCDC___0x20800110____0x_08X_000120a7 + 1,_DAT_20800110);
+      FUN_000006c8(s_LCDC___0x20800114____0x_08X_000120c8,_DAT_20800114);
+      FUN_000006c8(s_LCDC___0x20800118____0x_08X_000120e8,_DAT_20800118);
+      FUN_000006c8(s_LCDC___0x2080011c____0x_08X_00012108,_DAT_2080011c);
+      return 0;
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14767
+      FUN_000006c8(s_LCDC___0x20800114____0x_08X_000120c8,_DAT_20800114);
+      FUN_000006c8(s_LCDC___0x20800118____0x_08X_000120e8,_DAT_20800118);
+      FUN_000006c8(s_LCDC___0x2080011c____0x_08X_00012108,_DAT_2080011c);
+      return 0;
+    }
+    if ((*puVar1 & 1 << (uVar2 & 0xff)) != 0) break;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14824
+  uVar2 = FUN_00012e80();
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x110,
+                 uVar3);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14825
+  if (1 < uVar2) {
+    uVar3 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x110,
+                 uVar3);
+  }
+  *puVar1 = *puVar1 & ~(1 << (uVar2 & 0xff));
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14850
+  uVar3 = FUN_00012e80();
+  if (1 < uVar3) {
+    uVar4 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x124,
+                 uVar4);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14851
+  if (1 < uVar3) {
+    uVar4 = FUN_000006ec(s_ISP_VSP_DRV__The_interrupt_irq_t_00011e5b + 1,param_1);
+    FUN_000006e8(s__uint32__LCDC_IRQ_NUM_>_irq_num_00011e34,s_lcdc_drv_ums9117_c_00011e20,0x124,
+                 uVar4);
+  }
+  uVar1 = 1 << (uVar3 & 0xff);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14906
+      iVar2 = FUN_00000740(0x13,DAT_000123d8,DAT_000123d4,*DAT_000123d0,pcVar1 + 4);
+      if (iVar2 != 0) {
+        uVar3 = FUN_000006ec(s_Register_Interrupt_of_the_LCDC_f_000123dc);
+        FUN_000006e8(&DAT_00012404,s_lcdc_drv_ums9117_c_00011e20,0x180,uVar3);
+      }
+      *pcVar1 = '\x01';
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:14907
+      if (iVar2 != 0) {
+        uVar3 = FUN_000006ec(s_Register_Interrupt_of_the_LCDC_f_000123dc);
+        FUN_000006e8(&DAT_00012404,s_lcdc_drv_ums9117_c_00011e20,0x180,uVar3);
+      }
+      *pcVar1 = '\x01';
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15839
+  }
+  else {
+    FUN_000006c8(s___LCDC_IRQ_type_is_wrong__irq_ty_00012ef6 + 2,param_1);
+  }
+  return uVar1;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:15861
+  }
+  else {
+    FUN_000006c8(s_LCDC_IRQ_num_is_wrong__irq_numbe_00012f20,param_1);
+  }
+  return uVar1;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\img_90000024.c:21748
+
+{
+  software_interrupt(0xab);
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34949
+    }
+    else {
+      FUN_006fdf4a(s_LCDC_IRQ_num_is_wrong__irq_numbe_0003f580);
+    }
+    uVar2 = FUN_000402d0(uVar5);
+    if (1 < uVar2) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34953
+    uVar2 = FUN_000402d0(uVar5);
+    if (1 < uVar2) {
+      uVar5 = FUN_006fd49c(s__GetIntStatus__The_interrupt_irq_0003f5a8,uVar5);
+      thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                         0x84,uVar5);
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34954
+    if (1 < uVar2) {
+      uVar5 = FUN_006fd49c(s__GetIntStatus__The_interrupt_irq_0003f5a8,uVar5);
+      thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                         0x84,uVar5);
+    }
+    pcVar3 = (code *)*param_2;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34998
+        if (1 < uVar3) {
+          uVar4 = FUN_006fd49c(DAT_0003fa08,param_1);
+          thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,
+                             s_lcdc_drv_ums9117_c_0003f5dc,0x481,uVar4);
+        }
+        *puVar2 = *puVar2 | 1 << (uVar3 & 0xff);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:34999
+          uVar4 = FUN_006fd49c(DAT_0003fa08,param_1);
+          thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,
+                             s_lcdc_drv_ums9117_c_0003f5dc,0x481,uVar4);
+        }
+        *puVar2 = *puVar2 | 1 << (uVar3 & 0xff);
+        return 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35009
+    } while (bVar6);
+  }
+  FUN_006fdf4a(s_LCDC___0x20800110____0x_08X_0003fa17 + 1,_DAT_20800110);
+  FUN_006fdf4a(s_LCDC___0x20800114____0x_08X_0003fa38,_DAT_20800114);
+  FUN_006fdf4a(s_LCDC___0x20800118____0x_08X_0003fa58,_DAT_20800118);
+  FUN_006fdf4a(s_LCDC___0x2080011c____0x_08X_0003fa78,_DAT_2080011c);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35010
+  }
+  FUN_006fdf4a(s_LCDC___0x20800110____0x_08X_0003fa17 + 1,_DAT_20800110);
+  FUN_006fdf4a(s_LCDC___0x20800114____0x_08X_0003fa38,_DAT_20800114);
+  FUN_006fdf4a(s_LCDC___0x20800118____0x_08X_0003fa58,_DAT_20800118);
+  FUN_006fdf4a(s_LCDC___0x2080011c____0x_08X_0003fa78,_DAT_2080011c);
+  return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35011
+  FUN_006fdf4a(s_LCDC___0x20800110____0x_08X_0003fa17 + 1,_DAT_20800110);
+  FUN_006fdf4a(s_LCDC___0x20800114____0x_08X_0003fa38,_DAT_20800114);
+  FUN_006fdf4a(s_LCDC___0x20800118____0x_08X_0003fa58,_DAT_20800118);
+  FUN_006fdf4a(s_LCDC___0x2080011c____0x_08X_0003fa78,_DAT_2080011c);
+  return 0;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35012
+  FUN_006fdf4a(s_LCDC___0x20800114____0x_08X_0003fa38,_DAT_20800114);
+  FUN_006fdf4a(s_LCDC___0x20800118____0x_08X_0003fa58,_DAT_20800118);
+  FUN_006fdf4a(s_LCDC___0x2080011c____0x_08X_0003fa78,_DAT_2080011c);
+  return 0;
+}
+
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35040
+  if (1 < uVar3) {
+    uVar4 = FUN_006fd49c(DAT_0003fa08,3);
+    thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                       0x481,uVar4);
+  }
+  *puVar1 = *puVar1 | 1 << (uVar3 & 0xff);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35074
+  uVar2 = FUN_000402d0();
+  if (1 < uVar2) {
+    uVar3 = FUN_006fd49c(s_ISP_VSP_DRV__The_interrupt_irq_t_0003faab + 1,param_1);
+    thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                       0x110,uVar3);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35075
+  if (1 < uVar2) {
+    uVar3 = FUN_006fd49c(s_ISP_VSP_DRV__The_interrupt_irq_t_0003faab + 1,param_1);
+    thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                       0x110,uVar3);
+  }
+  *puVar1 = *puVar1 & ~(1 << (uVar2 & 0xff));
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35102
+  uVar2 = FUN_000402d0();
+  if (1 < uVar2) {
+    uVar3 = FUN_006fd49c(s_ISP_VSP_DRV__The_interrupt_irq_t_0003faab + 1,param_1);
+    thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                       0x124,uVar3);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35103
+  if (1 < uVar2) {
+    uVar3 = FUN_006fd49c(s_ISP_VSP_DRV__The_interrupt_irq_t_0003faab + 1,param_1);
+    thunk_FUN_006fb59e(s__uint32__LCDC_IRQ_NUM_>_irq_num_0003f5f0,s_lcdc_drv_ums9117_c_0003f5dc,
+                       0x124,uVar3);
+  }
+  uVar4 = 1 << (uVar2 & 0xff);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35158
+      iVar2 = FUN_003632fc(0x13,DAT_0003faf4,DAT_0003faf0,*DAT_0003faec,pcVar1 + 4);
+      if (iVar2 != 0) {
+        uVar3 = FUN_006fd49c(s_Register_Interrupt_of_the_LCDC_f_0003faf8);
+        thunk_FUN_006fb59e(&DAT_0003fb20,s_lcdc_drv_ums9117_c_0003f5dc,0x180,uVar3);
+      }
+      *pcVar1 = '\x01';
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:35159
+      if (iVar2 != 0) {
+        uVar3 = FUN_006fd49c(s_Register_Interrupt_of_the_LCDC_f_0003faf8);
+        thunk_FUN_006fb59e(&DAT_0003fb20,s_lcdc_drv_ums9117_c_0003f5dc,0x180,uVar3);
+      }
+      *pcVar1 = '\x01';
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36144
+  }
+  else {
+    FUN_006fdf4a(s_LCDC_IRQ_type_is_wrong__irq_type_0004032b + 1,param_1);
+  }
+  return uVar1;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36159
+  
+  if (0x7f < param_1) {
+    uVar1 = FUN_006fd49c(s__s___d__gpio__d_exceed_max__00040604,s_gpio_phy_c_000405f8,0x19,param_1);
+    thunk_FUN_006fb59e(s_SCI_FALSE_00040620,s_gpio_phy_c_000405f8,0x19,uVar1);
+  }
+  return DAT_0004062c;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36160
+  if (0x7f < param_1) {
+    uVar1 = FUN_006fd49c(s__s___d__gpio__d_exceed_max__00040604,s_gpio_phy_c_000405f8,0x19,param_1);
+    thunk_FUN_006fb59e(s_SCI_FALSE_00040620,s_gpio_phy_c_000405f8,0x19,uVar1);
+  }
+  return DAT_0004062c;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36372
+            if ((uVar8 & 1) != 0) {
+              if (0x2f < uVar11) {
+                FUN_006fb8b0(s_gpio_num_<_GPIO_TOTAL_CNT_00040ac4,s_gpio_ext_drv_c_00040a6c,0x267);
+              }
+              iVar9 = DAT_00040a60 + 0x10 + uVar11 * 0xc;
+              if (((*(char *)(iVar9 + 3) == '\0') && (*(char *)(iVar9 + 2) != '\0')) &&
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36496
+    } while (uVar11 < 3);
+    if (*(int *)(DAT_00040eec + 0xc) != 0xffff) {
+      uVar2 = FUN_006f7f62(s_GPIO_EXT_INT_DESHAKING_00040ef0,0x4088b,*(int *)(DAT_00040eec + 0xc),
+                           0x14,0);
+      *(undefined4 *)(puVar1 + 8) = uVar2;
+      *puVar1 = 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36550
+    if ((uVar7 < 3) && (param_1 < 0x10)) {
+      if (0x2f < uVar5) {
+        FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x2ac);
+      }
+      iVar3 = DAT_00040eec + 0x10 + uVar5 * 0xc;
+      local_28 = param_2;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36600
+      goto LAB_00040c66;
+    }
+    FUN_006fb8b0(&DAT_00040f0c,s_gpio_ext_drv_c_00040a6c,0x2a9);
+  }
+  uVar2 = 0xff;
+  local_28 = param_2;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36638
+    uVar6 = param_1 + uVar5 * 0x10;
+    if ((2 < uVar5) || (0xf < param_1)) {
+      FUN_006fb8b0(s__ic_<_GPIO_EXT_DEV_MAX_CNT)_&&_(_00040f2c,s_gpio_ext_drv_c_00040a6c,0x31a);
+    }
+    if (0x2f < uVar6) {
+      FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x31b);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36641
+    }
+    if (0x2f < uVar6) {
+      FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x31b);
+    }
+    iVar3 = DAT_00040eec + 0x10 + uVar6 * 0xc;
+    if (((*(char *)(iVar3 + 2) != '\0') && (*(char *)(iVar3 + 3) != '\0')) &&
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36705
+    uVar5 = uVar3 + uVar4 * 0x10;
+    if ((2 < uVar4) || (0xf < uVar3)) {
+      FUN_006fb8b0(s__ic_<_GPIO_EXT_DEV_MAX_CNT)_&&_(_00040f2c,s_gpio_ext_drv_c_00040a6c,0x36b,
+                   param_4,param_3);
+    }
+    FUN_006fe074(0x10,DAT_00040ee4 + 0xc,&DAT_00040a54,param_1);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36710
+    FUN_006fe074(0x10,DAT_00040ee4 + 0xc,&DAT_00040a54,param_1);
+    if (0x2f < uVar5) {
+      FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x36f);
+    }
+    iVar6 = DAT_00040eec + 0x10 + uVar5 * 0xc;
+    if (*(char *)(iVar6 + 2) != '\0') {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36715
+    if (*(char *)(iVar6 + 2) != '\0') {
+      if (*(char *)(iVar6 + 3) != '\0') {
+        FUN_006fb8b0(s___s_GPIO_EXT_tab_gpio_index__dir_00040f68,s_gpio_ext_drv_c_00040a6c,0x374);
+      }
+      iVar1 = FUN_00040c0e();
+      if (iVar1 != 0) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36757
+  uVar3 = (param_1 & 0xff) + uVar2 * 0x10 & 0xff;
+  if ((2 < uVar2) || (0xf < (param_1 & 0xff))) {
+    FUN_006fb8b0(&DAT_00040f0c,s_gpio_ext_drv_c_00040a6c,0x409);
+  }
+  if (0x2f < uVar3) {
+    FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x40c);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:36760
+  }
+  if (0x2f < uVar3) {
+    FUN_006fb8b0(s_gpio_index_<_GPIO_TOTAL_CNT_00040f10,s_gpio_ext_drv_c_00040a6c,0x40c);
+  }
+  iVar5 = DAT_000410a4 + 0x10;
+  iVar4 = iVar5 + uVar3 * 0xc;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42214
+  iVar1 = DAT_0004db54;
+  if (0x5d < param_1) {
+    FUN_006fb8b0(s_id_<_GPIO_PROD_ID_MAX_0004db64,s_gpio_prod_c_0004db58,0x8c8);
+  }
+  puVar2 = (uint *)(iVar1 + param_1 * 0x10);
+  if ((*puVar2 != param_1) ||
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42520
+  iVar1 = DAT_0004e0c8;
+  if (param_1 == (uint *)0x0) {
+    FUN_006fb8b0(s_PNULL____cfg_info_ptr_0004e0cc,s_gpio_prod_c_0004db58,0x8ee);
+  }
+  if (0x5d < *param_1) {
+    FUN_006fb8b0(s_cfg_info_ptr_>gpio_id_<_GPIO_PRO_0004e0e4,s_gpio_prod_c_0004db58,0x8ef);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42523
+  }
+  if (0x5d < *param_1) {
+    FUN_006fb8b0(s_cfg_info_ptr_>gpio_id_<_GPIO_PRO_0004e0e4,s_gpio_prod_c_0004db58,0x8ef);
+  }
+  iVar3 = DAT_0004e110;
+  if (*(uint *)(iVar1 + *param_1 * 0x10) != *param_1) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42529
+    iVar3 = DAT_0004e110 + 1;
+  }
+  FUN_006fe074(0x10,iVar3,s_headset__GPIO_SentHeadsetIsConne_0004db98 + 0x30);
+  uVar4 = param_1[1];
+  uVar5 = param_1[2];
+  uVar6 = param_1[3];
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42551
+  undefined4 uVar2;
+  
+  FUN_006fdf4a(s_zgt_GPIO_HeadsetRecogPowerOn_0004e114);
+  FUN_0004d94a(1);
+  FUN_006f7a2a(0x14);
+  puVar1 = DAT_0004e06c;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42611
+      else {
+        if (iVar4 != 3) {
+          FUN_006fe074(0x10,DAT_0004e110 + -3,s_GPIO_HeadsetButtonIntHandler_gpi_0004e070 + 0x38);
+          return 0;
+        }
+        uVar2 = *(undefined2 *)(iVar3 + 10);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42628
+  }
+  if (iVar7 != 3) {
+    FUN_006fe074(0x10,DAT_0004e110 + -2,s_headset__GPIO_SentHeadsetIsConne_0004db98 + 0x30);
+    return 1;
+  }
+  uVar5 = FUN_002b9e5c(*(undefined2 *)(iVar3 + 10));
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42632
+  }
+  uVar5 = FUN_002b9e5c(*(undefined2 *)(iVar3 + 10));
+  FUN_006fdf4a(s_GPIO_PROD_RegGpio_EICA_DBNC_num__0004e134,*(undefined2 *)(iVar3 + 10),uVar5);
+  iVar7 = FUN_002b9e5c(*(undefined2 *)(iVar3 + 10));
+  piVar1 = DAT_0004e06c;
+  iVar4 = DAT_0004dfb8;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42705
+  iVar4 = FUN_0003d0ec();
+  iVar10 = DAT_0004e0c8;
+  FUN_006fe074(0x10,DAT_0004e110 + -1,s_GPIO_HeadsetButtonIntHandler_gpi_0004e070 + 0x38);
+  do {
+    puVar5 = (undefined4 *)(iVar10 + uVar17 * 0x10);
+    uVar17 = uVar17 + 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42728
+    }
+    else {
+      uVar7 = FUN_006fd49c(s_GPIO_full_table__d_line_has_been_0004e454);
+      thunk_FUN_006fb59e(&DAT_0004e480,s_gpio_prod_c_0004db58,0x8ab,uVar7);
+    }
+    if (uVar17 == 0x5d) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42729
+    else {
+      uVar7 = FUN_006fd49c(s_GPIO_full_table__d_line_has_been_0004e454);
+      thunk_FUN_006fb59e(&DAT_0004e480,s_gpio_prod_c_0004db58,0x8ab,uVar7);
+    }
+    if (uVar17 == 0x5d) {
+      uVar7 = FUN_006fd49c(s_GPIO_cus_cfg_table_has_not_end_f_0004e484);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42732
+    }
+    if (uVar17 == 0x5d) {
+      uVar7 = FUN_006fd49c(s_GPIO_cus_cfg_table_has_not_end_f_0004e484);
+      thunk_FUN_006fb59e(&DAT_0004e480,s_gpio_prod_c_0004db58,0x8b0,uVar7);
+    }
+    uVar17 = uVar17 + 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42733
+    if (uVar17 == 0x5d) {
+      uVar7 = FUN_006fd49c(s_GPIO_cus_cfg_table_has_not_end_f_0004e484);
+      thunk_FUN_006fb59e(&DAT_0004e480,s_gpio_prod_c_0004db58,0x8b0,uVar7);
+    }
+    uVar17 = uVar17 + 1;
+  } while (uVar17 < 0x5e);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42767
+  iVar4 = puVar5[2];
+  if (iVar4 == 0) {
+    FUN_006fb8b0(s_PNULL____cus_gpio_tab_00040a7c,s_gpio_ext_drv_c_00040a6c,0x141);
+  }
+  uVar17 = 0;
+  do {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42775
+    uVar16 = (uint)(uVar2 >> 8) * 0x10 + (uVar2 & 0xff);
+    if (0x2f < uVar16) {
+      FUN_006fb8b0(s_GPIO_TOTAL_CNT_>_index_00040a94,s_gpio_ext_drv_c_00040a6c,0x147);
+    }
+    if (*(short *)(iVar10 + uVar16 * 0xc) == -1) {
+      puVar8 = (undefined4 *)(iVar4 + uVar17 * 0xc);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42806
+  iVar4 = puVar5[1];
+  if (iVar4 == 0) {
+    FUN_006fb8b0(s_PNULL____cus_dev_tab_00040aac,s_gpio_ext_drv_c_00040a6c,0x16a);
+  }
+  uVar17 = 0;
+  do {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42918
+  uVar3 = FUN_00041426(param_2);
+  *param_3 = param_5;
+  FUN_006fdf4a(s_GPIO_GetTCXO_DCXO_Status______d__0004e4d4,uVar3);
+  return uVar3;
+}
+
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42954
+  if (((bVar12 || sVar1 == 0) || (uVar5 = FUN_0004006c(), uVar5 < *(ushort *)(iVar4 + 0x140))) ||
+     (uVar5 = FUN_00040072(), uVar5 < *(ushort *)(iVar4 + 0x142))) {
+    uVar6 = FUN_006fd49c(s_LCDC_lcdc_logic_size_err_width___0004e8f8,*(undefined2 *)(iVar4 + 0x140),
+                         *(undefined2 *)(iVar4 + 0x142));
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x10c,uVar6);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42956
+    uVar6 = FUN_006fd49c(s_LCDC_lcdc_logic_size_err_width___0004e8f8,*(undefined2 *)(iVar4 + 0x140),
+                         *(undefined2 *)(iVar4 + 0x142));
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x10c,uVar6);
+  }
+  FUN_0004f5cc();
+  uVar5 = 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42969
+      uVar9 = puVar7[4];
+      if ((uVar9 != 3 && uVar9 != 4) && ((uVar9 != 5 && uVar9 != 6) && uVar9 != 7)) {
+        uVar6 = FUN_006fd49c(s_LCDC_osd1_data_format_err_format_0004e938);
+        thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,400,uVar6);
+      }
+      FUN_0004f58a(puVar7[4],&local_28,local_24);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42970
+      if ((uVar9 != 3 && uVar9 != 4) && ((uVar9 != 5 && uVar9 != 6) && uVar9 != 7)) {
+        uVar6 = FUN_006fd49c(s_LCDC_osd1_data_format_err_format_0004e938);
+        thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,400,uVar6);
+      }
+      FUN_0004f58a(puVar7[4],&local_28,local_24);
+      uVar9 = (uint)(ushort)puVar7[-4];
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:42977
+         (uVar10 = local_24[0], uVar9 == 0 || *(ushort *)((int)puVar7 + -0xe) == 0)) {
+        uVar6 = FUN_006fd49c(DAT_0004e95c,puVar7[4],uVar9,*(undefined2 *)((int)puVar7 + -0xe));
+        thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x199,uVar6);
+        uVar10 = extraout_r1;
+      }
+      uVar9 = (uint)(ushort)puVar7[-3];
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43000
+        uVar6 = FUN_006fd49c(DAT_0004e960,puVar7[4],uVar9,*(undefined2 *)((int)puVar7 + -10),
+                             (short)puVar7[-2],*(undefined2 *)((int)puVar7 + -6));
+        thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1a9,uVar6);
+      }
+      if ((((ushort)puVar7[-1] & local_28) != 0) ||
+         ((*(ushort *)((int)puVar7 + -2) & local_24[0]) != 0)) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43004
+      if ((((ushort)puVar7[-1] & local_28) != 0) ||
+         ((*(ushort *)((int)puVar7 + -2) & local_24[0]) != 0)) {
+        uVar6 = FUN_006fd49c(s_LCDC_osd1_postion_not_algin_data_0004e964,puVar7[4],
+                             (uint)(ushort)puVar7[-1],*(undefined2 *)((int)puVar7 + -2));
+        thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1b0,uVar6);
+      }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43006
+        uVar6 = FUN_006fd49c(s_LCDC_osd1_postion_not_algin_data_0004e964,puVar7[4],
+                             (uint)(ushort)puVar7[-1],*(undefined2 *)((int)puVar7 + -2));
+        thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1b0,uVar6);
+      }
+      if (((uint)uVar2 < (uint)(ushort)puVar7[-1] + (uint)(ushort)puVar7[-2]) ||
+         (uVar9 = (uint)*(ushort *)((int)puVar7 + -2) + (uint)*(ushort *)((int)puVar7 + -6),
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43011
+         (uVar9 = (uint)*(ushort *)((int)puVar7 + -2) + (uint)*(ushort *)((int)puVar7 + -6),
+         uVar3 < uVar9)) {
+        uVar6 = FUN_006fd49c(s_LCDC_osd1_size_err_x__d__y__d__w_0004e99c,(uint)(ushort)puVar7[-1],
+                             *(undefined2 *)((int)puVar7 + -2),(uint)(ushort)puVar7[-2],
+                             *(undefined2 *)((int)puVar7 + -6));
+        uVar9 = thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1b6,uVar6);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43014
+                             *(undefined2 *)((int)puVar7 + -2),(uint)(ushort)puVar7[-2],
+                             *(undefined2 *)((int)puVar7 + -6));
+        uVar9 = thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1b6,uVar6);
+      }
+      if ((*puVar7 & 3) != 0) {
+        uVar6 = FUN_006fd49c(s_src_base_addr_is_not_word_aligne_0004e9c8);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43018
+      if ((*puVar7 & 3) != 0) {
+        uVar6 = FUN_006fd49c(s_src_base_addr_is_not_word_aligne_0004e9c8);
+        uVar9 = thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1bc,uVar6);
+      }
+      bVar12 = uVar5 == 1;
+      if (bVar12) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43031
+        if (puVar7[1] == 0) {
+          uVar6 = FUN_006fd49c(s_alpha_base_address_is_invalid_0004e9fc);
+          thunk_FUN_006fb59e(s_layer_ptr_>alpha_base_addr_0004ea1c,s_lcdc_app_c_0004e928,0x1c2,uVar6
+                            );
+        }
+        if ((puVar7[1] & 3) != 0) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43036
+        if ((puVar7[1] & 3) != 0) {
+          uVar6 = FUN_006fd49c(s_alpha_base_address_is_not_word_a_0004ea38);
+          thunk_FUN_006fb59e(s_LCDC_ZERO_____layer_ptr_>alpha_b_0004ea6c,s_lcdc_app_c_0004e928,0x1c4
+                             ,uVar6);
+        }
+      }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43048
+  iVar11 = *(int *)(iVar4 + 0x11c);
+  if ((iVar11 != 3 && iVar11 != 4) && iVar11 != 5) {
+    uVar6 = FUN_006fd49c(s_LCDC_cap_data_format_err_format__0004eaa8);
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1de,uVar6);
+  }
+  uVar5 = FUN_0004f58a(*(undefined4 *)(iVar4 + 0x11c),&local_28,local_24);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43049
+  if ((iVar11 != 3 && iVar11 != 4) && iVar11 != 5) {
+    uVar6 = FUN_006fd49c(s_LCDC_cap_data_format_err_format__0004eaa8);
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1de,uVar6);
+  }
+  uVar5 = FUN_0004f58a(*(undefined4 *)(iVar4 + 0x11c),&local_28,local_24);
+  uVar9 = (uint)*(ushort *)(iVar4 + 0x114);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43072
+                         *(undefined2 *)(iVar4 + 0x116),*(undefined2 *)(iVar4 + 0x118),
+                         *(undefined2 *)(iVar4 + 0x11a));
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1ec,uVar6);
+  }
+  if ((((*(ushort *)(iVar4 + 0x108) & local_28) != 0) ||
+      ((*(ushort *)(iVar4 + 0x10a) & local_24[0]) != 0)) ||
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43078
+     ((*(short *)(iVar4 + 0x10c) != *(short *)(iVar4 + 0x118) ||
+      (*(short *)(iVar4 + 0x10e) != *(short *)(iVar4 + 0x11a))))) {
+    uVar6 = FUN_006fd49c(s_LCDC_capture_rect_error__x__d__y_0004ead0,
+                         (uint)*(ushort *)(iVar4 + 0x108),*(undefined2 *)(iVar4 + 0x10a),
+                         *(undefined2 *)(iVar4 + 0x10c),*(undefined2 *)(iVar4 + 0x10e));
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1f5,uVar6);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43081
+                         (uint)*(ushort *)(iVar4 + 0x108),*(undefined2 *)(iVar4 + 0x10a),
+                         *(undefined2 *)(iVar4 + 0x10c),*(undefined2 *)(iVar4 + 0x10e));
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1f5,uVar6);
+  }
+  if ((*(uint *)(iVar4 + 0x120) & 3) != 0) {
+    uVar6 = FUN_006fd49c(s_dst_base_addr_is_not_word_aligne_0004eb0c);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43085
+  if ((*(uint *)(iVar4 + 0x120) & 3) != 0) {
+    uVar6 = FUN_006fd49c(s_dst_base_addr_is_not_word_aligne_0004eb0c);
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x1fb,uVar6);
+  }
+  if (*(char *)(iVar4 + 0x128) != '\0') {
+    return;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43099
+    return;
+  }
+  uVar6 = FUN_006fd49c(s_LCDC_trim_rect_error__x___d__y___0004eb40,*(undefined2 *)(iVar4 + 0x154),
+                       *(undefined2 *)(iVar4 + 0x156),uVar5,*(undefined2 *)(iVar4 + 0x15a));
+  thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x124,uVar6);
+  return;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43101
+  uVar6 = FUN_006fd49c(s_LCDC_trim_rect_error__x___d__y___0004eb40,*(undefined2 *)(iVar4 + 0x154),
+                       *(undefined2 *)(iVar4 + 0x156),uVar5,*(undefined2 *)(iVar4 + 0x15a));
+  thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x124,uVar6);
+  return;
+}
+
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43116
+  
+  if (1 < param_1) {
+    uVar1 = FUN_006fd49c(s_LCDC_AppSetFmark_lcd_id_is_error_0004eb74,param_1);
+    thunk_FUN_006fb59e(s__lcd_id_<_2)_0004eb9c,s_lcdc_app_c_0004e928,0x545,uVar1);
+  }
+  iVar2 = DAT_0004e8f4 + param_1 * 4;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43117
+  if (1 < param_1) {
+    uVar1 = FUN_006fd49c(s_LCDC_AppSetFmark_lcd_id_is_error_0004eb74,param_1);
+    thunk_FUN_006fb59e(s__lcd_id_<_2)_0004eb9c,s_lcdc_app_c_0004e928,0x545,uVar1);
+  }
+  iVar2 = DAT_0004e8f4 + param_1 * 4;
+  *(undefined4 *)(iVar2 + 0x14c) = param_3;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43192
+     (*(ushort *)(iVar5 + 0x162) < *(ushort *)(iVar5 + 0x15a))) {
+    uVar3 = FUN_006fd49c(s_display_size_is_less_than_lcm_si_0004ebac);
+    thunk_FUN_006fb59e(&DAT_0004e934,s_lcdc_app_c_0004e928,0x421,uVar3);
+  }
+  local_78 = *(int *)(iVar5 + 0x160);
+  FUN_0003fc12(&local_78);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43351
+                goto LAB_0004ef8c;
+              }
+              FUN_006fdf4a(s__LCDC_GetColorKey__expand_mode_i_0004f02c);
+              uVar7 = 0;
+            }
+          }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43410
+          iVar19 = local_74 - uVar8;
+        }
+        FUN_006fe074(0x10,DAT_0004f058,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,
+                     *(undefined4 *)(iVar5 + 0x120));
+        if (iVar15 < 0) {
+          iVar9 = iVar15 * local_78;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43429
+        FUN_0003ffd6(*(undefined4 *)(iVar5 + 0x11c));
+        FUN_00040018(*(undefined4 *)(iVar5 + 0x124));
+        FUN_006fe074(0x10,DAT_0004f490,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,
+                     *(undefined4 *)(iVar5 + 0x120));
+        FUN_0003ff22(*(undefined4 *)(iVar5 + 0x120));
+        FUN_0003feee(puVar10);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43491
+  case 0:
+    if (param_2 == (ushort *)0x0) {
+      FUN_006fb8b0(s_PNULL____param_ptr_0004f498,s_lcdc_app_c_0004e928,0x457);
+    }
+    uVar4 = *(undefined4 *)(param_2 + 2);
+    uVar5 = *(undefined4 *)(param_2 + 4);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43529
+  case 5:
+    if (param_2 == (ushort *)0x0) {
+      FUN_006fb8b0(s_PNULL____param_ptr_0004f498,s_lcdc_app_c_0004e928,0x488);
+    }
+    uVar4 = *(undefined4 *)(param_2 + 2);
+    uVar5 = *(undefined4 *)(param_2 + 4);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43571
+    break;
+  default:
+    FUN_006fe074(0x10,DAT_0004f4ac,s_LCDC_lcdc_logic_size_err_width___0004e8f8 + 0x2c,param_1);
+    return 0;
+  }
+  return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43640
+  if (*(short *)(param_1 + 1) != *(short *)(param_1 + 4)) {
+    uVar2 = FUN_006fd49c(DAT_0004f4b0);
+    thunk_FUN_006fb59e(s_param_ptr_>cap_rect_w____param_p_0004f4b4,s_lcdc_app_c_0004e928,0x513,uVar2
+                      );
+  }
+  if (*(short *)((int)param_1 + 6) != *(short *)((int)param_1 + 0x12)) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43645
+  if (*(short *)((int)param_1 + 6) != *(short *)((int)param_1 + 0x12)) {
+    uVar2 = FUN_006fd49c(DAT_0004f4e8);
+    thunk_FUN_006fb59e(s_param_ptr_>cap_rect_h____param_p_0004f4ec,s_lcdc_app_c_0004e928,0x518,uVar2
+                      );
+  }
+  return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\kernel.c:43715
+  
+  if (1 < param_1) {
+    uVar1 = FUN_006fd49c(s_LCDC_AppSetCSPin_lcd_id_is_error_0004f524);
+    thunk_FUN_006fb59e(s__lcd_id_<_2)_0004eb9c,s_lcdc_app_c_0004e928,0x573,uVar1);
+  }
+  *(uint *)(DAT_0004f548 + param_1 * 4) = param_2 & 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95558
+      iVar4 = thunk_EXT_FUN_80e5cc1c(pbVar2 + 8,DAT_8806a4bc,6,param_4,param_4);
+      if (iVar4 == 0) {
+        thunk_EXT_FUN_81103f4a(s__tcpip___USB_SHARE___s__d_ICMP6__8806a4f8,DAT_8806a43c + 6,0x16e);
+        return 1;
+      }
+      pbVar5 = pbVar2 + 0x38;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95565
+      if (0x10 < uVar8) {
+        if ((uVar6 & 7) != 0) {
+          thunk_EXT_FUN_81103f4a(s__tcpip___USB_SHARE___s__d_tcpip__8806a4c0,DAT_8806a43c + 6,0x17d)
+          ;
+          return 1;
+        }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95573
+          if (pbVar5[1] == 0) {
+            thunk_EXT_FUN_81103f4a
+                      (s__tcpip___USB_SHARE___s__d_bad_op_8806a538,DAT_8806a43c + 6,0x188,iVar7,
+                       uVar6);
+            return 1;
+          }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95585
+          if (*pbVar2 == 0x19) {
+            bVar1 = true;
+            thunk_EXT_FUN_81103f4a(s__USB_SHARE___s__d_find_dns6_8806a578,DAT_8806a43c + 6,0x1a4);
+          }
+          uVar6 = uVar6 + (uint)pbVar2[1] * -8;
+        }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95591
+        if (!bVar1) {
+          thunk_EXT_FUN_81103f4a
+                    (s__USB_SHARE___s__d_DNS_option_is_n_8806a598,DAT_8806a43c + 6,0x1af);
+        }
+      }
+      return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95596
+      return 0;
+    }
+    pcVar3 = s__tcpip___USB_SHARE__tcpip__icmpv_8806a47c;
+  }
+  else {
+    pcVar3 = s__tcpip___USB_SHARE__tcpip__icmpv_8806a440;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95599
+  }
+  else {
+    pcVar3 = s__tcpip___USB_SHARE__tcpip__icmpv_8806a440;
+  }
+  thunk_EXT_FUN_81103f4a(pcVar3);
+  return 1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95783
+  local_28 = 0;
+  if ((param_1 == 0) || (*(int *)(param_1 + 0x10) == 0)) {
+    thunk_EXT_FUN_811018b0(&DAT_8806b018,s_usbshare_api_c_8806a398,0x3ae);
+  }
+  iVar8 = *(int *)(param_1 + 0x10);
+  iVar9 = iVar8 + -0xe;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:95809
+           ((*(uint *)(iVar1 + 0x34) & *(uint *)(iVar1 + 0x40)) !=
+            (*(uint *)(iVar1 + 0x40) & local_30))) {
+          thunk_EXT_FUN_81103f4a(s__USB_SHARE__UsbShare_arpParse_no_8806b01c);
+          goto LAB_8806ae08;
+        }
+        uVar7 = local_30 << 0x18 | (local_30 >> 8 & 0xff) << 0x10 | (local_30 >> 0x10 & 0xff) << 8 |
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96211
+        local_34 = DAT_8806b884;
+        uStack_30 = 0xffffffff;
+        thunk_EXT_FUN_81103f4a(s__USB_SHARE__remote_nsapi__d_rndi_8806b888,local_28,iVar5);
+        FUN_880d5486(&local_50,*piVar16);
+        if (local_b8 != '\0') {
+          FUN_880d59f6(*piVar16);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96226
+    else {
+      if (*(int *)(iVar3 + 0x304) != 4) {
+        pcVar10 = s__USB_SHARE__net_type_is_invalid_8806b678;
+        goto LAB_8806b6e0;
+      }
+      thunk_EXT_FUN_811049dc(&local_e0,0x90);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96264
+        local_34 = DAT_8806b884;
+        uStack_30 = 0xffffffff;
+        thunk_EXT_FUN_81103f4a(s__USB_SHARE__remote_nsapi__d_rndi_8806b888,local_28,iVar5);
+        FUN_880d5486(&local_50,*piVar16);
+        if (local_b8 != '\0') {
+          FUN_880d59f6(*piVar16);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96270
+        }
+        FUN_880d5b66(iVar3,*piVar16);
+        thunk_EXT_FUN_81103f4a(s__USB_SHARE__remote_nsapi__d_rndi_8806b888,local_28,*piVar16);
+        goto LAB_8806b7a6;
+      }
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96274
+      }
+    }
+    pcVar10 = s__USB_SHARE__TCPIP_RegNetInterfac_8806b8b4;
+LAB_8806b6e0:
+    thunk_EXT_FUN_81103f4a(pcVar10);
+    return 0xffffffff;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96281
+  iVar3 = FUN_887c2876();
+  if (iVar3 == 0) {
+    pcVar10 = s__USB_SHARE__usbshare_start__fail_8806ab38;
+LAB_8806aaaa:
+    thunk_EXT_FUN_81103f4a(pcVar10);
+LAB_8806aaae:
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:96307
+        pcVar10 = s_ipv4v6_8806ab74;
+      }
+      thunk_EXT_FUN_81103f4a(s__USB_SHARE__usbshare_start___d_s_8806ab88,0x2d8,pcVar10);
+      FUN_88251754(0);
+      *(undefined *)(iVar3 + 0x535) = 1;
+      FUN_882517c2(0);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:172339
+            iVar1 = thunk_EXT_FUN_814e10a4(param_1 + 3,(int)&local_40 + 3,3);
+            if (iVar1 == 0) {
+              thunk_EXT_FUN_81103f4a(s__BT__BT_Addr_Match_NAP_UAP__usb__880b883c);
+              uVar2 = 5;
+            }
+            else {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:220298
+        piVar2 = (int *)thunk_FUN_880f2bec(uVar5);
+        if (piVar2 == (int *)0x0) {
+          thunk_EXT_FUN_811018b0(s_PNULL____item_data_ptr_880e7b68,s_ctrlstatusbar_c_880e7b58,0x65d)
+          ;
+        }
+        FUN_880f2ac2(&local_e8,uVar5);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:220973
+  if (*DAT_880e857c == 0) {
+    uVar2 = FUN_8810b066();
+    iVar3 = FUN_8824ab42(uVar2,s_statusbar_880e8590,0xd8,DAT_880e858c,DAT_880e8588,0x10,DAT_880e8584
+                         ,0xb0,DAT_880e8580);
+    *piVar1 = iVar3;
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:220995
+    iVar3 = FUN_8824ac2e(iVar1,uVar2);
+    if (iVar3 == 0) {
+      thunk_EXT_FUN_811018b0(s_StatusbarTypeOf__ctrl_ptr__880e859c,s_ctrlstatusbar_c_880e7b58,0x21a)
+      ;
+    }
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:231842
+  uVar4 = 0;
+  iVar3 = param_1 * 0x84;
+  iVar2 = thunk_EXT_FUN_810ff868(iVar3,0x22222222,s_ctrlstatusbar_data_c_880f2c24,0xfe);
+  piVar1 = DAT_880f2c3c;
+  DAT_880f2c3c[2] = iVar2;
+  if (iVar2 != 0) {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:244966
+{
+  *(undefined4 *)(DAT_881008d0 + 0x28) = 0;
+  thunk_EXT_FUN_81103f4a(s_eng_test_autotest_keypad_881008d4);
+  FUN_880d283c(DAT_881008f0,0);
+  return;
+}
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246000
+  int iVar1;
+  
+  thunk_EXT_FUN_81103f4a(s__USB_share__MMIUSBSHARE_Disconne_88102568);
+  iVar1 = FUN_880d34c6(0x6f);
+  if (iVar1 != 0) {
+    FUN_883da56e(0x6f);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246028
+      uVar3 = DAT_88102590;
+      pbVar2[2] = 1;
+      thunk_EXT_FUN_81103f4a(s__USB_SHARE___s__d_USB_StartServi_88102594,uVar3,0x72);
+      thunk_EXT_FUN_81238cce(2);
+      *(undefined4 *)(pbVar2 + 4) = param_2;
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246035
+    pbVar2[1] = bVar1 + 1;
+    if (10 < bVar1) {
+      thunk_EXT_FUN_81103f4a(s__USB_SHARE___s__d_USB_StartServi_881025b8,DAT_88102590,0x79);
+      FUN_887e9716(*pbVar2);
+      *pbVar2 = 0;
+      FUN_881021ba();
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246086
+    iVar2 = *(int *)(param_1 + 0xc);
+    if (iVar2 == 2) {
+      thunk_EXT_FUN_81103f4a(s___USB_share__MMIPDP_ACTIVE_CNF_8810261b + 1);
+      if (*(int *)(param_1 + 0x14) != 0) {
+        uVar4 = FUN_887d9e50(0x27);
+        return uVar4;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246099
+      }
+      *(undefined *)(iVar1 + 2) = 1;
+      thunk_EXT_FUN_81103f4a(s__USB_SHARE___s__d_USB_StartServi_88102594,iVar2 + 0x15,0xa3);
+      thunk_EXT_FUN_81238cce(2);
+      *(undefined4 *)(iVar1 + 4) = *(undefined4 *)(param_1 + 4);
+    }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246104
+    }
+    else if (iVar2 == 4) {
+      thunk_EXT_FUN_81103f4a(s__USB_share__MMIPDP_DEACTIVE_CNF_8810263c);
+      FUN_8810223c(0);
+      *(undefined *)(iVar1 + 2) = 0;
+      iVar5 = param_1;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246110
+    }
+    else if (iVar2 == 5) {
+      thunk_EXT_FUN_81103f4a(s__USB_share__MMIPDP_DEACTIVE_IND_881025ec);
+      iVar5 = 0;
+      param_2 = 0;
+      FUN_887f018e(0,_DAT_88102618,DAT_88102614 + -0xfb,DAT_88102614,0,0,1,DAT_88102610);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246152
+  iVar2 = FUN_8809c880(iVar1,uVar4);
+  if (iVar2 == 0) {
+    pcVar3 = s__USB_share__MMIUSBSHARE_ConnectP_881026d8;
+  }
+  else {
+    local_e8 = 0x27;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246168
+    iVar1 = FUN_887d9cc2(&local_e8);
+    if (iVar1 != 0) {
+      thunk_EXT_FUN_81103f4a(s__USB_share__MMIUSBSHARE_ConnectP_88102664);
+      return 1;
+    }
+    pcVar3 = s__USB_share__MMIUSBSHARE_ConnectP_881026a0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246171
+      return 1;
+    }
+    pcVar3 = s__USB_share__MMIUSBSHARE_ConnectP_881026a0;
+  }
+  thunk_EXT_FUN_81103f4a(pcVar3);
+  return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246185
+  int iVar1;
+  
+  thunk_EXT_FUN_81103f4a(s__USB_share__MMIUSBSHARE_Disable_8810270c);
+  iVar1 = DAT_8810258c;
+  if (*(int *)(DAT_8810258c + 4) != 0) {
+    FUN_8806b808(*(int *)(DAT_8810258c + 4),1);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246205
+  iVar1 = DAT_8810258c;
+  thunk_EXT_FUN_81103f4a
+            (s__USB_share__MMIUSBSHARE_IsRunnin_88102730,*(undefined *)(DAT_8810258c + 2));
+  return *(undefined *)(iVar1 + 2);
+}
+
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246237
+    uVar5 = FUN_887f83be();
+    uVar6 = FUN_8809f902();
+    thunk_EXT_FUN_81103f4a(s__USB_share__usb_share___gprs___d_88102758,uVar6,uVar5,uVar4,uVar3);
+  }
+  FUN_887f0222(uVar1);
+  return 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:246315
+    }
+    if (param_2 == 0xf022) {
+      thunk_EXT_FUN_81103f4a(s__USB_share__HandleUsbShareConnec_88102794);
+      FUN_8810238e();
+      FUN_8810223c(0);
+      *(undefined *)(DAT_8810258c + 2) = 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:253088
+  int iVar1;
+  
+  iVar1 = thunk_EXT_FUN_810fb9a6(s_SDIO0_IRP_88109f3c);
+  *(int *)(DAT_88109f28 + 0xc) = iVar1;
+  if (iVar1 != 0) {
+    thunk_EXT_FUN_810fad8e();
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:311363
+            thunk_EXT_FUN_810f7460(iVar8,8);
+            thunk_EXT_FUN_811037c8(piVar3[1],s_unknown_881a2448,7);
+            thunk_EXT_FUN_81103f4a(s___hls___audio_codecs_is_unknown___881a264c,DAT_881a2384,0x6aa);
+          }
+          else {
+            iVar8 = thunk_EXT_FUN_810ff150();
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:311378
+            thunk_EXT_FUN_811037c8(piVar3[1],piVar4[1],uVar5);
+            thunk_EXT_FUN_81103f4a
+                      (s___hls___audio_codecs_group_id_is_881a260c,piVar3[1],DAT_881a2384,0x69d);
+          }
+          if (*piVar4 != 0) {
+            iVar8 = thunk_EXT_FUN_810ff150();
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:442706
+        puVar4 = &DAT_882332b4;
+      }
+      thunk_EXT_FUN_810ff124(auStack_84,s__s_chip_id__s_882332bc,uVar1,puVar4);
+      uVar2 = thunk_EXT_FUN_810ff150(auStack_84);
+      uVar1 = thunk_EXT_FUN_810ff868(uVar2 * 2 + 2,0x44444444,DAT_882332cc,0x35f1);
+      iVar3 = uVar2 * 2 + 2;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:444117
+    FUN_887eea32(iVar2,&local_10);
+  }
+  thunk_EXT_FUN_81103f4a(s_MMIAPIENG_IsUSBLOGON_is_on____d_8823610c,local_10 & 0xff);
+  return local_10 & 0xff;
+}
+
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:519087
+      iVar2 = thunk_EXT_FUN_810ff23e();
+    } while ((uint)(iVar2 - iVar1) < 0xbb9);
+    pcVar3 = s__SCM__Card_sdio__Send_ACMD41_tim_8828b3f8;
+  }
+LAB_8828b066:
+  thunk_EXT_FUN_81103f4a(pcVar3);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:572850
+      iVar2 = (*pcVar3)(uVar1 - 1,auStack_50);
+      if (iVar2 == 0) {
+        FUN_881f0c6a(uVar4,s_Interrupts___rx__lu__tx__lu_tota_882c163c,local_4c,uStack_48,local_44);
+        FUN_881f0c6a(uVar4,s_RX___packets__lu_errors__lu_over_882c195c,local_38,uStack_34,local_30);
+        FUN_881f0c6a(uVar4,s_TX___packets__lu_errors__lu_unde_882c1988,local_2c,uStack_28,local_14);
+        FUN_881f0c6a(uVar4,s_coll1__lu_collx__lu_defer__lu__d_882c19b4,local_24,uStack_20,local_1c,
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:677626
+      }
+      else {
+        thunk_EXT_FUN_81103f4a(s__USB_SHARE__DAPS_>RNDIS_883996b8);
+        FUN_887cd4e4(local_40,local_3c,0);
+        thunk_EXT_FUN_80bfe566(&local_40,1);
+        iVar6 = 0;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:688806
+  
+  iVar1 = thunk_EXT_FUN_80a82314(1);
+  thunk_EXT_FUN_81103f4a(s_MMIAPISD_IsUsbLogOn_PortNo____d_883a480c,iVar1);
+  if ((iVar1 != 4) && (iVar1 != 5)) {
+    return 0;
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:696929
+  cVar1 = *(char *)(param_3 + 8);
+  if (cVar1 == '\x01') {
+    thunk_EXT_FUN_81103f4a(s_HandleKeypadAutotest__KEYPAD_INI_883ac3b0);
+    thunk_EXT_FUN_80d696b0();
+    thunk_EXT_FUN_80bc69cc(3,1,2,1,uVar2);
+  }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:696935
+  else {
+    if (cVar1 == '\x02') {
+      thunk_EXT_FUN_81103f4a(s_HandleKeypadAutotest__KEYPAD_ASK_883ac3d4);
+      iVar5 = DAT_883ac3a8;
+      if (*(short *)(DAT_883ac3a8 + 6) != 0) {
+        *param_2 = 0xc;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:696968
+    }
+    if (cVar1 == '\x03') {
+      thunk_EXT_FUN_81103f4a(s_HandleKeypadAutotest__KEYPAD_DON_883ac3f8);
+      thunk_EXT_FUN_80bc6a36(3,1,2,1,uVar2);
+    }
+    else {
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:696977
+      }
+      iVar5 = thunk_EXT_FUN_80a4273e();
+      thunk_EXT_FUN_81103f4a(s_HandleKeypadAutotest__KEYPAD_COD_883ac41c);
+      if (iVar5 != 3) {
+        FUN_88100532();
+      }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:788952
+    func_0x87446608(param_1,local_38);
+    if ((bool)uVar2) {
+      software_interrupt(0x3f1b8);
+    }
+    if ((bool)uVar1) {
+      *local_2c = (char)auStack_48;
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:1130614
+          FUN_883da56e(DAT_88847cb0);
+          thunk_EXT_FUN_80da5aea(&local_18);
+          thunk_EXT_FUN_81103f4a(s_MMIAPIUdisk_OpenUsbOperWindow_as_88847cb4,local_18 & 0xff);
+          if ((char)local_18 == '\x01') {
+            thunk_EXT_FUN_81103f4a(DAT_88847d14);
+            FUN_880d283c(DAT_88847d18,0);
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:1130620
+            return 1;
+          }
+          thunk_EXT_FUN_81103f4a(s_MMIAPIUdisk_OpenUsbOperWindow_on_88847ce4);
+        }
+        return 0;
+      }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:1130895
+        if ((param_2 == 0xf021) &&
+           (thunk_EXT_FUN_81104074
+                      (0x10,DAT_88847eb8,s_MMIAPIUdisk_OpenUsbOperWindow_as_88847cb4 + 0x2c),
+           iVar3 == 3)) {
+          FUN_880d40dc(param_1,0x100);
+        }
+
+### C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\user-source\user_bin.c:1130906
+    if (param_2 == 0xf023) {
+      thunk_EXT_FUN_81104074
+                (0x10,DAT_88847eb8 + 3,s_MMIAPIUdisk_OpenUsbOperWindow_as_88847cb4 + 0x2c);
+      if (iVar3 == 3) {
+        FUN_880e0202();
+      }

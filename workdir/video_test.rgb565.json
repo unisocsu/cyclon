@@ -1,0 +1,8 @@
+{
+  "width": 128,
+  "height": 160,
+  "fps": 10,
+  "frames": 50,
+  "pix_fmt": "rgb565le",
+  "bytes": 2048000
+}

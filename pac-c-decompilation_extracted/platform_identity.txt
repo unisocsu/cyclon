@@ -1,0 +1,260 @@
+﻿C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:412: *(byte *)((int)param_1 + iVar2 + 0x24) = extraout_r1 + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:425: *(byte *)((int)param_1 + iVar2 + 0x24) = ((byte)uVar6 & 7) + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:469: *(byte *)((int)param_1 + iVar2 + 0x24) = extraout_r2 + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:573: (*(code *)param_1[1])(0x30,param_1[2]);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:850: *DAT_0000062c = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:854: DAT_0000062c[-0xd] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:855: puVar4[-0xe] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:856: DAT_0000062c[-4] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:857: DAT_0000062c[-0xc] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:858: DAT_0000062c[-0x10] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:859: DAT_0000062c[-5] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:861: DAT_0000062c[-2] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:862: puVar4[-1] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:863: DAT_0000062c[-3] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:864: DAT_0000062c[-6] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:866: DAT_0000062c[-0xb] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:867: puVar4[-10] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:868: puVar3[-7] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:869: puVar3[-9] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1080: puVar1[2] = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1219: FUN_000004da(uVar8 | 2,(int)((ulonglong)uVar9 >> 0x20),0x3000);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1311: puVar2[2] = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1440: return 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1507: local_4c = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1518: local_4c = *(ushort *)(param_1 + 0xc) - 1 | 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1525: local_48 = local_48 | 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1527: DAT_00001348 + (uint)*(ushort *)(param_1 + 0x26) * 0x10000 | 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1751: local_4c = local_4c | 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1811: FUN_00000644(0x30cd);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1815: if (*(char *)(param_1 + 0x30) == '\0') {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:1885: if (*(char *)(param_1 + 0x30) == '\0') {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2101: return *(int *)(param_1 + 0x30) + param_1 + 0x200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2451: iVar2 = *(int *)(param_2 + 0x30) + param_2 + 0x200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2458: FUN_000015d8(param_2 + 0x200,*(undefined4 *)(param_2 + 0x30),auStack_38);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2906: *(uint *)(DAT_0000211c + 0x300) = *(uint *)(DAT_0000211c + 0x300) | 3;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2927: *(uint *)(DAT_0000211c + 0x300) = *(uint *)(DAT_0000211c + 0x300) & 0xfffffffc;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:2931: *(undefined4 *)(DAT_00002128 + 4) = 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3085: if (-1 < *(int *)(iVar1 + 0x30) << 0x14) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3800: FUN_00002bb2(iVar4 * 4 + 0x30000020,*(undefined1 *)(iVar5 + iVar4 * 3),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:3807: FUN_00002bde(iVar4 * 4 + 0x30000020,*(undefined1 *)(iVar5 + iVar4 * 3),
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4210: if ((param_1 != 0x28) && (param_1 == 0x30)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4333: *(undefined4 *)(iVar2 + 0x30000200) = *(undefined4 *)(iVar3 + 4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4334: *(undefined4 *)(iVar2 + 0x30000204) = *(undefined4 *)(iVar3 + 8);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4335: *(undefined4 *)(iVar2 + 0x30000208) = *(undefined4 *)(iVar3 + 0xc);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4336: *(undefined4 *)(iVar2 + 0x3000020c) = *(undefined4 *)(iVar3 + 0x10);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4337: *(undefined4 *)(iVar2 + 0x30000210) = *(undefined4 *)(iVar3 + 0x14);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4338: *(undefined4 *)(iVar2 + 0x30000214) = *(undefined4 *)(iVar3 + 0x18);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4339: *(undefined4 *)(iVar2 + 0x30000218) = *(undefined4 *)(iVar3 + 0x1c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4340: *(undefined4 *)(iVar2 + 0x3000021c) = *(undefined4 *)(iVar3 + 0x20);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4341: *(undefined4 *)(iVar2 + 0x30000220) = *(undefined4 *)(iVar3 + 0x24);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4342: *(undefined4 *)(iVar2 + 0x30000224) = *(undefined4 *)(iVar3 + 0x28);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4343: *(undefined4 *)(iVar2 + 0x30000228) = *(undefined4 *)(iVar3 + 0x2c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4344: *(undefined4 *)(iVar2 + 0x3000022c) = *(undefined4 *)(iVar3 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4345: *(undefined4 *)(iVar2 + 0x30000230) = *(undefined4 *)(iVar3 + 0x34);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4516: return (*(uint *)(((_DAT_3000012c & 0x3f) >> 4) * 0x40 + 0x30000230) & 0xffff) >> 0xf;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4528: return (*(uint *)(((_DAT_3000012c & 0x3f) >> 4) * 0x40 + 0x3000022c) & 0x1ff) >> 8;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4544: uVar2 = FUN_000032a4(*(undefined4 *)(iVar1 + 0x3000022c),8,1,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4545: *(undefined4 *)(iVar1 + 0x3000022c) = uVar2;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:4886: local_38 = 0x30000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5642: uVar2 = 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5882: param_1[iVar6 + 6] = uVar2 - 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:5887: param_1[iVar6 + 6] = (uVar2 + param_1[iVar6 + 6] * 10) - 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:6273: if (param_1 - 0x30U < 10) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot0.c:6922: return 0x3000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:391: *(byte *)((int)param_1 + iVar2 + 0x24) = extraout_r1 + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:404: *(byte *)((int)param_1 + iVar2 + 0x24) = ((byte)uVar6 & 7) + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:448: *(byte *)((int)param_1 + iVar2 + 0x24) = extraout_r2 + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:552: (*(code *)param_1[1])(0x30,param_1[2]);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:839: *DAT_0000065c = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:843: DAT_0000065c[-0xd] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:844: puVar4[-0xe] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:845: DAT_0000065c[-4] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:846: DAT_0000065c[-0xc] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:847: DAT_0000065c[-0x10] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:848: DAT_0000065c[-5] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:850: DAT_0000065c[-2] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:851: puVar4[-1] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:852: DAT_0000065c[-3] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:853: DAT_0000065c[-6] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:855: DAT_0000065c[-0xb] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:856: puVar4[-10] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:857: puVar3[-7] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:858: puVar3[-9] = 0x300000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1069: puVar1[2] = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1166: puVar2[2] = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1295: return 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1362: local_4c = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1373: local_4c = *(ushort *)(param_1 + 0xc) - 1 | 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1380: local_48 = local_48 | 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1382: DAT_00001880 + (uint)*(ushort *)(param_1 + 0x26) * 0x10000 | 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1606: local_4c = local_4c | 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1666: FUN_00000674(0x30cd);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1670: if (*(char *)(param_1 + 0x30) == '\0') {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1740: if (*(char *)(param_1 + 0x30) == '\0') {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1908: local_58 = 0x3000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:1929: local_4c = local_4c | 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:3529: *param_1 = 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:3797: local_250[iVar3 + 0x30] + local_250[iVar3 + 0x39] +
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:3961: return param_1 + 0x200 + *(int *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4095: iVar1 = *(int *)(param_2 + 0x30) + param_2 + 0x200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4102: FUN_00003d0c(param_2 + 0x200,*(undefined4 *)(param_2 + 0x30),auStack_38);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4125: iVar2 = *(int *)(param_2 + 0x30) + param_2 + 0x200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4185: if (-1 < *(int *)(iVar1 + 0x30) << 0x14) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4302: *(undefined4 *)(iVar1 + 0x30) = 0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4305: FUN_0000e3a0(iVar1 + 0x30,puVar2,4);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:4314: *(int *)(iVar3 + 0xbf4) = iVar1 + 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:5806: if (*(code **)(piVar4[3] + 0x30) != Reset) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:5807: uVar3 = (**(code **)(piVar4[3] + 0x30))
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:5832: if (*(code **)(piVar4[3] + 0x30) != Reset) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:5833: uVar3 = (**(code **)(piVar4[3] + 0x30))
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:6289: iVar3 = (**(code **)(param_1 + 0x30))
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:6303: (**(code **)(param_1 + 0x30))
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:6431: (**(code **)(param_1 + 0x30))
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:6795: uVar2 = *(uint *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:6797: *(int *)(param_1 + 0x30) = param_2;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:6812: *(int *)(param_1 + 0x30) = param_2;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:7543: uVar2 = *(uint *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:7550: *(undefined4 *)(param_1 + 0x30) = 0x1fff;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:7554: uVar4 = *(uint *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:8451: uVar2 = 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:8563: param_1[iVar6 + 6] = uVar2 - 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:8568: param_1[iVar6 + 6] = (uVar2 + param_1[iVar6 + 6] * 10) - 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:9830: if (param_1 - 0x30U < 10) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\boot1.c:10479: return 0x3000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:1406: *(undefined4 *)(iVar1 + 0x30) = DAT_00001574;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:1441: *(undefined4 *)(iVar1 + 0x30) = DAT_00001590;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:2384: uVar2 = 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:2465: param_1[iVar6 + 6] = uVar2 - 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:2470: param_1[iVar6 + 6] = (uVar2 + param_1[iVar6 + 6] * 10) - 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:2827: (*(code *)param_1[1])(0x30,param_1[2]);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:3022: if (param_1 - 0x30U < 10) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:3451: FUN_00006070(0x30,param_1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:3677: *(undefined4 *)(puVar1 + 0x30) = 0xff;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4512: func_0x0002c344(&uStack_a0,s_RTOS_source_src_c_threadx_mem_c_0000766c,0x309);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4806: iVar5 = *(int *)(iVar8 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4830: iVar6 = *(int *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4831: *(int *)(iVar2 + 0x30) = iVar6;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4888: *(int *)(param_1 + 0x30) = param_1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4892: iVar7 = *(int *)(iVar6 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4893: *(int *)(iVar6 + 0x30) = param_1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4896: *(int *)(param_1 + 0x30) = iVar7;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:4998: *(int *)(iVar5 + 0x30) = iVar6;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5058: *(int *)(param_1 + 0x30) = param_1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5061: iVar2 = *(int *)(iVar6 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5062: *(int *)(iVar6 + 0x30) = param_1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5065: *(int *)(param_1 + 0x30) = iVar2;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5094: *(undefined4 *)(iVar5 + 0x30) = 0xd;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5264: *(undefined4 *)(iVar6 + 0x30) = 7;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5363: if (*(int *)(iVar9 + 0x30) == 7) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5710: iVar7 = *(int *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5714: *(undefined4 *)(param_1 + 0x30) = 0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5756: *(undefined4 *)(param_1 + 0x30) = 0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5760: *(undefined4 *)(param_1 + 0x30) = 3;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5862: if (*(int *)(param_1 + 0x30) == 0) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5866: *(undefined4 *)(param_1 + 0x30) = 3;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:5885: if ((param_1 != *piVar1) && (*(int *)(param_1 + 0x30) == 0)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6120: iVar4 = *(int *)(iVar3 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6121: *(undefined4 **)(iVar3 + 0x30) = param_1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6180: *(undefined4 *)(iVar4 + 0x30) = 9;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6233: *(undefined4 *)(iVar7 + 0x30) = 8;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6342: iVar6 = *(int *)(iVar5 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:6343: *(undefined4 **)(iVar5 + 0x30) = param_1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_a.c:7610: *(undefined4 *)(iVar2 + 0x30) = 4;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:1627: *(uint *)(DAT_00003b2c + 0x308) = *(uint *)(DAT_00003b2c + 0x308) & 0xfffffffe;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:1737: *(uint *)(DAT_00003b2c + 0x308) = *(uint *)(DAT_00003b2c + 0x308) | 1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:1864: *(uint *)(DAT_00003b2c + 0x308) = *(uint *)(DAT_00003b2c + 0x308) | 1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2085: *(uint *)(iVar4 + 0x308) = *(uint *)(iVar4 + 0x308) & 0xfffffffe;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2108: *(uint *)(iVar4 + 0x308) = *(uint *)(iVar4 + 0x308) | 1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2229: if (((*(char *)(iVar2 + 0x28) == '\x15') && (*(char *)(iVar2 + 0x30) == '\x15')) &&
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2326: *(uint *)(DAT_0000446c + 0x30) = *(uint *)(DAT_0000446c + 0x30) & 0xfffffffe;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2534: *(undefined4 *)(DAT_000048e8 + 0x30) = 0x80008000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2590: *(undefined4 *)(DAT_000048e8 + 0x30) = 0x80008000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2639: *(undefined4 *)(DAT_000048e8 + 0x30) = 0x8000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2728: *(uint *)(iVar4 + 0x30) = *(uint *)(iVar4 + 0x30) | 0x8000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2729: *(uint *)(iVar4 + 0x30) = *(uint *)(iVar4 + 0x30) & 0x7fffffff;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2806: *(undefined4 *)(DAT_00004d74 + 0x30) = 0x80000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2819: *(uint *)(DAT_00004d84 + 0x30) = *(uint *)(DAT_00004d84 + 0x30) | 1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2902: *(undefined4 *)(DAT_00004d74 + 0x30) = 0x80008000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2909: *(undefined4 *)(DAT_00004d74 + 0x30) = 0x80000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2925: *(undefined4 *)(DAT_00004d74 + 0x30) = 0x80000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2931: *DAT_00004db0 = *DAT_00004db0 | 0x30200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2934: *(undefined4 *)(DAT_00004d74 + 0x30) = 0x80000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2941: *(undefined4 *)(DAT_00004d74 + 0x30) = 0x80000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:2945: uVar4 = *DAT_00004db0 | 0x30200;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:3499: *(uint *)(iVar1 + 0x30) = *(uint *)(iVar1 + 0x30) & 0xe;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:3572: *(uint *)(iVar2 + 0x70) = *(uint *)(iVar2 + 0x70) | 0x3000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:3582: *(uint *)(DAT_00005bd0 + 0x10c) = *(uint *)(DAT_00005bd0 + 0x10c) | 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4099: *(undefined4 *)(iVar1 + 0x70) = 0x3000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4522: *(undefined4 *)(iVar2 + 0x30) = uVar5;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4524: if (15000 < (uint)(*(int *)(iVar2 + 0x30) - *(int *)(iVar2 + 0x14))) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4534: FUN_0000646a(0x30,param_1,0x4c);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:4985: FUN_0000646a(0x30,&local_84,5);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:5756: FUN_00005198(0x41a4,*(undefined4 *)(iVar1 + 0x30));
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:6409: FUN_00017678(0xd200,0x301);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:6612: *(undefined4 *)(iRam0000a6e8 + 0x104) = 0x3000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:6655: *(undefined4 *)(iRam0000a6e8 + 0x104) = 0x3000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:7695: uVar1 = *(undefined4 *)(DAT_0000b5dc + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:8384: FUN_0000ab10(0xd,0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:8861: FUN_0003b9ae(param_1,(1 << (puVar3[5] & 0xff) & 0x30c00000U) != 0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:8896: uVar7 = iVar6 - 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:9067: FUN_0003b9ae(param_1,(1 << (*(uint *)(iVar1 + 0x14) & 0xff) & 0x30c00000U) != 0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:12490: *(undefined1 *)(param_1 + 0x346) = 0x30;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:12887: FUN_000345dc(iVar3 + 0xbb,param_1 + 0x306,param_1 + 0x82,DAT_00011eec);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:12961: FUN_000345dc(param_1 + 0x306,param_1 + 0x306,param_1 + 0x3d1,DAT_00011eec);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:13039: FUN_00034708(param_1 + 0x306,iVar3 + 0xbb,param_1 + 0x358,param_1 + 0x82);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:13852: FUN_0000aad0(0x30,0xe7);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:14777: *(undefined2 *)(param_1 + 0x30) = 0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:14959: *(undefined4 *)(iVar2 + 0x30) = *(undefined4 *)(iVar5 + 0xa0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:14961: *(uint *)(iVar5 + 0x44) = iVar2 + (uint)*(ushort *)(iVar5 + 0x30) * 0x14 & 0xfffffff;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15044: uVar5 = (uint)*(ushort *)(param_1 + 0x30) * 4;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15050: uVar5 = (uint)*(ushort *)(param_1 + 0x30) * 4;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15055: if ((uVar2 & 0xffff) < (uint)*(ushort *)(param_1 + 0x30) << 1) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15087: if (*DAT_00015f10 < *(ushort *)(param_1 + 0x30)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15088: if (*DAT_00015f14 < *(ushort *)(param_1 + 0x30)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15119: uVar6 = (uint)*(ushort *)(param_1 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15128: *(ushort *)(param_1 + 0x30) = uVar1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15145: if (*DAT_00015f10 < *(ushort *)(param_1 + 0x30)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15146: if (*DAT_00015f14 < *(ushort *)(param_1 + 0x30)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15301: if (*(ushort *)(pcVar13 + 0x30) < 0x21) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15308: if ((uint)*(ushort *)(pcVar13 + 0x30) * 2 < (uStack_28 & 0xffff)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15309: uVar6 = (undefined2)((*(ushort *)(pcVar13 + 0x30) & 0x7fff) << 1);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15313: if (((uStack_28 & 0xffff) == (uint)*(ushort *)(pcVar13 + 0x30) * 2) &&
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:15784: iVar3 = (**(code **)(iVar3 + 0x30))();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:16152: iVar1 = (**(code **)(iVar1 + 0x30))();
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:16947: *(uint *)(iVar1 + 0x30) = *(uint *)(iVar1 + 0x30) & 0xfffffffe;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:16952: *(uint *)(iVar1 + 0x30) = *(uint *)(iVar1 + 0x30) | 1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:16961: *(uint *)(iVar1 + 0x308) = *(uint *)(iVar1 + 0x308) | 1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:16962: *(uint *)(iVar1 + 0x30) = *(uint *)(iVar1 + 0x30) & 0xffffffef;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:17325: *(uint *)(iVar1 + 0x300) =
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:17358: *(uint *)(iVar1 + 0x300) = *(uint *)(iVar1 + 0x300) & 0xffffbfff;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:18034: *(undefined4 *)(DAT_00018bfc + 0x30) = DAT_00018c0c;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:18585: *(undefined4 *)(DAT_00019494 + 0x30) = 0x80000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:18602: *(undefined4 *)(iVar2 + 0x30) = 0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:19967: *(undefined4 *)(iVar1 + 0x30) = 0;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20019: *(uint *)(iVar2 + 0x30) = uVar6 & 0x1f;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20032: if (((uint)*(byte *)(iVar2 + 4) * 4 + 3 == uVar6) && (5 < *(uint *)(iVar2 + 0x30))) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20041: uVar8 = *(uint *)(iVar2 + 0x30);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20272: *(uint *)(DAT_0001b0f4 + 0x30) = *(uint *)(DAT_0001b0f4 + 0x30) & 0xfffffff1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20320: *(uint *)(DAT_0001b0f4 + 0x30) = *(uint *)(DAT_0001b0f4 + 0x30) | 8;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:20372: *(uint *)(iVar2 + 0x30) = *(uint *)(iVar2 + 0x30) & 0xfffffff1;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:21964: if ((uVar7 & 0x30c00000) != 0) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:22335: FUN_00017678(0xd30e,param_2 & 0xffff | 0x300);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:22449: FUN_0003b9ae(*(undefined1 *)(param_1 + 0x1e),(uVar9 & 0x30c00000) != 0);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:22891: if ((-1 < iVar8) && ((uVar3 & 0x300000) != 0)) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:22951: ((((uVar7 & 0x300000) == 0 && ((uVar10 & DAT_0001dae0) != 0)) || (bVar11 && bVar12)))) {
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:23109: FUN_0000aad0(0x1f,s_addr_<_AP_DDR_BASE___SMEM_SIZE_&_00001604 + 0x29);
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:24701: *(uint *)(DAT_0001fe3c + 0x48) = *(uint *)(DAT_0001fe3c + 0x48) | 0x30000000;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25155: uVar2 = DAT_000205a4 * *param_1 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25156: uVar3 = uVar2 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25157: uVar1 = DAT_000205a4 * uVar3 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25173: uVar1 = DAT_000205a4 * *DAT_000205a0 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25174: uVar2 = uVar1 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25175: uVar3 = uVar2 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25198: uVar4 = DAT_000205a4 * *puVar1 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25199: uVar5 = uVar4 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25200: uVar6 = uVar5 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25231: uVar4 = DAT_000205a4 * *puVar1 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25232: uVar5 = uVar4 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:25233: uVar6 = uVar5 * DAT_000205a4 + 0x3039;
+C:\Users\LENOVO\Desktop\cyclon\pac-c-decompilation_extracted\decompiled\bin-c\cm4_b.c:27453: local_32 = *(undefined2 *)(param_2 + 0x30);
