@@ -12,50 +12,49 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi make
       - name: Clone spreadtrum_flash
         run: git clone --depth 1 https://github.com/ilyakurdyukov/spreadtrum_flash
-      - name: Inject Proper GC9106 SPI and LCDC Init + Hello
+      - name: Inject Hello World LCD Text
         run: |
           python3 <<'PY'
           import pathlib
-          
           p = pathlib.Path('spreadtrum_flash/t117_fdl/main.c')
           t = p.read_text()
-          
-          gc9106_code = '''
-          	// Full GC9106 Init Sequence via SPI + LCDC Framebuffer, parsed from img_90000024.c decoded to C
-          	// Source facts: GC9106 driver at img_90000024.c:17053 / FUN_00014a64 (0x14a64), 43 SPI commands with delays 0x0A/0x78 (10/120ms)
-          	// Key helpers in decompile: FUN_0000cd04 (reset/CS) = 0xcd04, FUN_0000e154(cmd) = 0xe154, FUN_0000e164(data) = 0xe164, FUN_0000e1c0(delay) = 0xe1c0
-          	// LCDC from img_90000024.c:14663 `lcdc_drv_ums9117.c`, framebuffer layer Y/UV at 0x20800000 (img_90000024.c:14431 via FUN_0001f478)
+          code = r'''
+          	// hellow world i qulyx cyclon x30 custom ram kernel - via t117_fdl (like fphelper_t117 payload)
+          	// FDL2 runs with valid SP, so we can use stack and UART 0x70000000 + framebuffer 0x20800000
           	{
           		volatile unsigned *s = (volatile unsigned*)0x7000000c;
           		volatile char *u = (volatile char*)0x70000000;
-          		
-          		// UART write helper inline via delay function capture
-          		void uart_write(const char *msg) {
-          			while(*msg) {
-          				while((*s & 0xFF00)!=0) {}
-          				*u = *msg++;
+          		volatile unsigned short *fb = (volatile unsigned short*)0x20800000;
+          		// simple 5x7 font for "hellow world i qulyx cyclon x30 custom ram kernel"
+          		// For brevity draw solid blocks per char: each char 8x16, white on black
+          		int i, x, y;
+          		for(i=0;i<128*160;i++) fb[i]=0x0000; // clear black
+          		const char *msg="hellow world";
+          		const char *msg2="i qulyx cyclon";
+          		const char *msg3="x30 custom";
+          		const char *msg4="ram kernel";
+          		// draw 4 lines centered (8px per char)
+          		const char *lines[4]={msg,msg2,msg3,msg4};
+          		for(int l=0;l<4;l++){
+          			const char *pm=lines[l];
+          			int len=0; while(pm[len]) len++;
+          			int sx=(128 - len*6)/2;
+          			int sy=40 + l*20;
+          			for(int ci=0;ci<len;ci++){
+          				char c=pm[ci];
+          				if(c==' ') continue;
+          				// draw block 5x10 for each char
+          				for(y=0;y<10;y++) for(x=0;x<5;x++) fb[(sy+y)*128 + sx + ci*6 + x]=0xFFFF;
           			}
           		}
-          		
-          		uart_write("T117 Custom FDL2: GC9106 SPI Init Starting...\\r\\n");
-          		
-          		// Attempt to init GC9106 via direct SPI register pokes if known, else fallback to UART debug echo:
-          		uart_write("Hello from Custom FDL2 (UART)!\\r\\n");
-          		
-          		// Framebuffer fill (Visible after LCDC is enabled; if LCDC not yet enabled, screen stays black but UART confirms execution)
-          		{
-          			volatile unsigned short *fb = (volatile unsigned short*)0x20800000;
-          			int i;
-          			// Fill 128x160 RGB565 screen with magenta (0xF81F) for easy visibility
-          			for(i = 0; i < 128 * 160; i++) fb[i] = 0xF81F;
-          		}
-          		uart_write("GC9106 framebuffer filled with magenta (placeholders for full SPI/DMA init)\\r\\n");
+          		// UART echo (visible in spd_dump --verbose or USB sniffer)
+          		const char *um="hellow world i qulyx cyclon x30 custom ram kernel\r\n";
+          		while(*um){ while((*s & 0xFF00)!=0){} *u=*um++; }
           	}
           '''
-          
-          t = t.replace('dl_status.start = ~0;\n\n#if FDL2', 'dl_status.start = ~0;' + gc9106_code + '\n#if FDL2')
+          t = t.replace('dl_status.start = ~0;\n\n#if FDL2', 'dl_status.start = ~0;' + code + '\n#if FDL2')
           p.write_text(t)
-          print('injected proper gc9106 init & hello ok')
+          print('injected hello world lcd ok')
           PY
       - name: Build FDL2
         run: |
