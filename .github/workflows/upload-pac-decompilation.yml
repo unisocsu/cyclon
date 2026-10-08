@@ -1,0 +1,30 @@
+name: Upload PAC decompilation ZIP
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'pac-c-decompilation.zip'
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify ZIP exists
+        run: |
+          test -f pac-c-decompilation.zip
+          ls -lh pac-c-decompilation.zip
+
+      - name: Upload ZIP as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pac-c-decompilation
+          path: pac-c-decompilation.zip
+          if-no-files-found: error
+          compression-level: 0
